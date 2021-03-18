@@ -60,7 +60,7 @@ brew search <app_name>
 ```
 
 ``` bash
-brew cask install <app_name>
+brew install <app_name>
 ```
 
 - For specific installation
