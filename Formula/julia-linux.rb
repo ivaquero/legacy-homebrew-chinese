@@ -1,4 +1,4 @@
-class JuliaBinary < Formula
+class JuliaLinux < Formula
   desc "The Julia programming language"
   homepage "https://julialang.org"
   version "1.5.0"
