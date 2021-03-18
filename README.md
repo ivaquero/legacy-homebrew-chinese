@@ -25,7 +25,7 @@
 
 - 国产软件
 - 开源软件的国内镜像
-- Linux GUI 软件
+- Linux 软件
 
 # 开始 🏃
 
@@ -66,10 +66,10 @@ brew cask install <app_name>
 - For specific installation
 
 ```bash
-brew cask install chinese/<app_name>
+brew install chinese/<app_name>
 ```
 
-#### 推荐：添加仓库 🚀
+#### 推荐：添加官方仓库 🚀
 
 ```bash
 brew tap homebrew/homebrew-cask
