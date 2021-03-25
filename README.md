@@ -84,7 +84,7 @@ brew help
 
 ## 总结 ⭐️
 
-|     App 名      | cask 名        | 是否原创?                                                                        |
+|     App 名      | Cask 名        | 是否原创?                                                                        |
 | :-------------: | -------------- | -------------------------------------------------------------------------------- |
 | Copy Translator | copytranslator | √ 已迁移至[Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)             |
 | HoststoolforMac | hoststool      | √ 已迁移至 [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)            |
