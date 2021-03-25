@@ -89,6 +89,7 @@ brew help
 | Copy Translator | copytranslator | √ 已迁移至[Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)             |
 | HoststoolforMac | hoststool      | √ 已迁移至 [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)            |
 |     MagnetW     | magnetw        | √                                                                                |
+|     Multrin     | multrin        | √                                                                                |
 |    西语助手     | eudic-es       | √ 已迁移至 [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)            |
 |    SageMath     | sagemath-cn    | √                                                                                |
 |   WPS Office    | wpsoffice-cn   | √                                                                                |
