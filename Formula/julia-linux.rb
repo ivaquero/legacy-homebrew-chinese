@@ -1,7 +1,7 @@
 class JuliaLinux < Formula
   desc "The Julia programming language"
   homepage "https://julialang.org"
-  version "1.5.4"
+  version "1.6.0"
 
   option "with-mirror-bfsu", "Download from https://mirrors.bfsu.edu.cn, use this option if you're in mainland China for a faster downloading speed."
 
@@ -11,7 +11,7 @@ class JuliaLinux < Formula
         url "https://julialang-s3.julialang.org/bin/linux/x64/#{version.major_minor}/julia-#{version}-linux-x86_64.tar.gz"
     end
 
-    sha256 "80dec351d1a593e8ad152636971a48d0c81bfcfab92c87f3604663616f1e8bc5"
+    sha256 "463b71dc70ca7094c0e0fd6d55d130051a7901e8dec5eb44d6002c57d1bd8585"
 
   bottle :unneeded
 
