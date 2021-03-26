@@ -1,4 +1,4 @@
-name: bump-homebrew-formula
+name: Update Homebrew formulae
 on:
   push:
     tags: 'v*'
