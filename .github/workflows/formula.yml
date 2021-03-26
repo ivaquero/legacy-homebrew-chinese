@@ -1,0 +1,30 @@
+on:
+  push:
+
+
+name: bump-homebrew-formula
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract version
+        id: extract-version
+        run: |
+          printf "::set-output name=%s::%s\n" tag-name "${GITHUB_REF#refs/tags/}"
+      - uses: mislav/bump-homebrew-formula-action@v1
+        if: "!contains(github.ref, '-')" # skip prereleases
+        with:
+          formula-name: my_formula
+          formula-path: Formula/my_formula.rb
+          homebrew-tap: integzz/homebrew-chinese
+          base-branch: main
+          download-url: https://example.com/foo/${{ steps.extract-version.outputs.tag-name }}.tar.gz
+          commit-message: |
+            {{formulaName}} {{version}}
+
+            Created by https://github.com/mislav/bump-homebrew-formula-action
+        env:
+          COMMITTER_TOKEN: ${{ secrets.homebrew-formula }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
