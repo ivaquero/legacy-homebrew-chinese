@@ -7,21 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Extract version
-        id: extract-version
-        run: |
-          printf "::set-output name=%s::%s\n" tag-name "${GITHUB_REF#refs/tags/}"
-      - uses: mislav/bump-homebrew-formula-action@v1
-        if: "!contains(github.ref, '-')" # skip prereleases
+      - name: Update Homebrew formula
+        uses: dawidd6/action-homebrew-bump-formula@v3
         with:
-          formula-name: my_formula
-          formula-path: Formula/my_formula.rb
-          homebrew-tap: integzz/homebrew-chinese
-          base-branch: main
-          download-url: https://example.com/foo/${{ steps.extract-version.outputs.tag-name }}.tar.gz
+          # Required, custom GitHub access token with only the 'public_repo' scope 
+          token: ${{secrets.TOKEN}}
+          # Optional, defaults to homebrew/core
+          tap: integzz/homebrew-chinese
+          # Formula name, required
+          formula: julia-linux
+          # Optional, will be determined automatically
+          tag: ${{github.ref}}
+          # Optional, will be determined automatically
           revision: ${{github.sha}}
-          commit-message: |
-            {{formulaName}} {{version}}
-        
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional, if don't want to check for already open PRs
+          force: false # true
