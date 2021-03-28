@@ -28,8 +28,8 @@ jobs:
       - name: Generate CI matrix
         id: generate-matrix
         run: |
-          brew tap homebrew/cask
-          brew ruby -- "$(brew --repository homebrew/cask)/cmd/lib/generate-matrix.rb" "${{ github.event.pull_request.url }}"
+          brew tap integzz/chinese
+          brew ruby -- "$(brew --repository integzz/chinese)/cmd/lib/generate-matrix.rb" "${{ github.event.pull_request.url }}"
   test:
     name: ${{ matrix.name }}
     needs: generate-matrix
@@ -209,7 +209,7 @@ jobs:
 
       - name: Compare installed and running apps and services with snapshot
         run: |
-          brew ruby -r "$(brew --repository homebrew/cask)/cmd/lib/check.rb" <<'EOF'
+          brew ruby -r "$(brew --repository integzz/chinese)/cmd/lib/check.rb" <<'EOF'
             require "cask/cask_loader"
             require "utils/github/actions"
             before = JSON.parse(<<~'EOS').transform_keys(&:to_sym)
