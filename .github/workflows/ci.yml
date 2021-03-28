@@ -174,7 +174,7 @@ jobs:
       - name: Take snapshot of installed and running apps and services
         id: snapshot
         run: |
-          brew ruby -r "$(brew --repository homebrew/cask)/cmd/lib/check.rb" <<'EOF'
+          brew ruby -r "$(brew --repository integzz/chinese)/cmd/lib/check.rb" <<'EOF'
             puts "::set-output name=before::#{JSON.generate(Check.all)}"
           EOF
         if: always() && steps.info.outcome == 'success'
