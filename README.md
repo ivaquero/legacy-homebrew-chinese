@@ -85,11 +85,12 @@ brew help
 ## 总结 ⭐️
 
 |     App 名      | Cask 名        | 是否原创?                                                                        |
-| :-------------: | -------------- | -------------------------------------------------------------------------------- |
+|:---------------:|----------------|----------------------------------------------------------------------------------|
 | Copy Translator | copytranslator | √ 已迁移至[Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)             |
 | HoststoolforMac | hoststool      | √ 已迁移至 [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)            |
 |     MagnetW     | magnetw        | √                                                                                |
 |     Multrin     | multrin        | √                                                                                |
+|     坚果云      | nutstore-auto  | √                                                                                |
 |    西语助手     | eudic-es       | √ 已迁移至 [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask)            |
 |    SageMath     | sagemath-cn    | √                                                                                |
 |   WPS Office    | wpsoffice-cn   | √                                                                                |
