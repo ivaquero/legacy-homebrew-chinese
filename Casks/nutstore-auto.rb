@@ -26,4 +26,6 @@ cask "nutstore-auto" do
     "~/Library/Preferences/net.nutstore.osxapp.plist",
     "~/Library/Preferences/net.nutstore.NutstoreJavaBE.plist",
   ]
+
+  app "Nutstore.app"
 end
