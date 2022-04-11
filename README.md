@@ -1,6 +1,6 @@
 <div>
   <div align="left">
-    <h1 align="left">Homebrew-Chinese</h1>
+    <h1 align="left"> 🀄 Homebrew-Chinese 🀄 </h1>
     <p>
       <a>
         <img
@@ -29,7 +29,7 @@
 
   <div>
     <p>
-      一个致力于服务国人的
+      🇨🇳 🇭🇰 🇲🇴 🇹🇼 一个致力于服务国人的
       <a href="https://github.com/Homebrew/brew"> Homebrew </a> 🍺 第三方库
     </p>
   </div>
