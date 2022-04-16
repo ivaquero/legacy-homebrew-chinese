@@ -28,13 +28,23 @@ jobs:
         run: |
           brew tap ivaquero/chinese
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
 
           if [[ $(uname -s) == "Darwin" ]]; then
               for cask in Casks/*.rb; do
-                  echo "ivaquero/chinese/$cask" | sed "s/\/Casks//g" | sed "s/.rb//g" | xargs brew install
+                  version=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew livecheck)
+                  current=$(echo $version | rg --only-matching "\d[\d.,-]+ " | sd " " "")
+                  echo $current
+                  latest=$(echo $version | rg --only-matching "> \d[\d.,-]+" | sd "> " "")
+                  echo $latest
+                  if [[ $current != $latest ]];then
+                    echo "update"
+                  else
+                  
+                  fi
               done
           fi
 
           for formula in Formula/*.rb; do
-              echo "ivaquero/chinese/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+              echo "ivaquero/chinese/$formula" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
           done

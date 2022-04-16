@@ -15,7 +15,7 @@ cask "mambaforge-cn" do
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url :url
+    url :homepage
     strategy :github_latest
     regex(%r{href=.*?/tag/v?(\d+(?:[._-]\d+)+)["' >]}i)
   end

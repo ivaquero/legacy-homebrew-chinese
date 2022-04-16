@@ -1,5 +1,5 @@
 cask "eshelper" do
-  version "4.1.7,2022-03-17"
+  version "4.2.0,1070"
   sha256 "3b8fa897016be54a488120cf0eac06b0905d4eb0a3283f84c0a4c9a277796dbf"
 
   # static.frdic.com/ was verified as official when first introduced to the cask
@@ -35,5 +35,4 @@ cask "eshelper" do
     "~/Library/Preferences/com.eusoft.eshelper.plist",
     "~/Library/Preferences/group.com.eusoft.eshelper.plist"
   ]
-
 end
