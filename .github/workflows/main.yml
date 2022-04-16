@@ -38,7 +38,7 @@ jobs:
                   latest=$(echo $version | rg --only-matching "> \d[\d.,-]+" | sd "> " "")
                   echo $latest
                   if [[ $current != $latest ]];then
-                    sd "$current" "$latest" $cask 
+                    sd "$current" "$latest" $cask
                   fi
                   echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
               done
