@@ -1,5 +1,5 @@
 cask "ting-en" do
-  version "9.5.0,2022-03-07"
+  version "9.5.0,2022-3-7"
   sha256 "c84c420fbcd279348a99b65debd1f2b390ee4b274e5a1ea632b8fd9cd2cf69e0"
 
   url "https://static.frdic.com/pkg/ting_en/ting_en.dmg?ver=#{version.csv.second}",
