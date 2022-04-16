@@ -13,7 +13,9 @@ cask "wpsoffice-cn" do
 
   livecheck do
       url "https://mac.wps.cn"
-      strategy :sparkle
+      strategy :page_match do |page|
+        page.scan(%r{\d+\.\d+\.\d+}i).first + "," + page.scan(%r{\(\d{4}\)}i).first.gsub("(", "").gsub(")", "")
+      end
   end
 
   app "wpsoffice.app"
