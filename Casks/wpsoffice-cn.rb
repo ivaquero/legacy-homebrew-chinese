@@ -6,7 +6,7 @@ cask "wpsoffice-cn" do
 
     url "https://package.mac.wpscdn.cn/mac_wps_pkg/#{version.csv.first}/WPS_Office_#{version.csv.first}(#{version.csv.second})_x64.dmg"
   else
-    sha256 "0e68e797253863fff96fc6f022657dab4914731ddaf4e8f32799be3bb6483a85"
+    sha256 "b36de75645e2fab6423a9f87887ed60245583ff553708cfcad57a8e04b08685c"
 
     url "https://package.mac.wpscdn.cn/mac_wps_pkg/#{version.csv.first}/WPS_Office_#{version.csv.first}(#{version.csv.second})arm64.dmg"
   end
