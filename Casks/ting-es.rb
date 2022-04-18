@@ -1,6 +1,6 @@
 cask "ting-es" do
-  version "9.5.0,2022-3-7"
-  sha256 "8acb81612fe7654e1ade91f7a97e621d8baf83c30053052629b82ab6a16c1244"
+  version "9.5.0,2022-03-07"
+  sha256 :no_check
 
   url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?ver=#{version.csv.second}",
       verified:   "static.frdic.com/",
@@ -14,7 +14,14 @@ cask "ting-es" do
   livecheck do
       url "http://www.francochinois.com/v4/es/app/history?appkey=eusoft_ting_es"
       strategy :page_match do |page|
-        page.scan(%r{\d+\.\d+\.\d+}i).first + "," + page.scan(%r{\d{4}年\d+月\d+日}i).second.gsub("年", "-").gsub("月", "-").gsub("日", "")
+        v = page.scan(%r{\d+\.\d+\.\d+}i).first 
+        year, month, day  = page.scan(%r{\d{4}年\d+月\d+日}i).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
+
+        date = "%d-%02d-%02d" % [year, month, day]
+        
+        next if v.blank? || date.blank?
+
+        "#{v},#{date}"
       end
   end
 

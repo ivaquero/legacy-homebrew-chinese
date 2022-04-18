@@ -20,7 +20,12 @@ cask "wpsoffice-cn" do
   livecheck do
       url "https://mac.wps.cn"
       strategy :page_match do |page|
-        page.scan(%r{\d+\.\d+\.\d+}i).first + "," + page.scan(%r{\(\d{4}\)}i).first.gsub("(", "").gsub(")", "")
+        v = page.scan(%r{\d+\.\d+\.\d+}i).first 
+        id = page.scan(%r{\(\d{4}\)}i).first.gsub("(", "").gsub(")", "")
+
+        next if v.blank? || id.blank?
+
+        "#{v},#{id}"
       end
   end
 
