@@ -44,7 +44,7 @@ brew tap ivaquero/chinese
 在终端中运行以下命令：
 
 ```bash
-brew tap integzz/chinese
+brew tap ivaquero/chinese
 brew update
 ```
 
