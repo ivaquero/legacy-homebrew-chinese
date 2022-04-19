@@ -83,7 +83,6 @@ brew help
 | :---------------: | :-------------: | :--: | :------: |
 |  M3U8-Downloader  | m3u8-downloader |  √   |    √     |
 | Mambaforge 清华源 |  mambaforge-cn  |  √   |    √     |
-| WPS Office 国内版 |  wpsoffice-cn   |  √   |    √     |
 |   每日法语听力    |     ting-fr     |  √   |    √     |
 |   每日英语听力    |     ting-en     |  √   |    √     |
 |   每日西语听力    |     ting-es     |  √   |    √     |
