@@ -12,12 +12,12 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  test:
-    name: Test homebrew-chinese on ${{ matrix.os }}
+  job1:
+    name: Test homebrew-chinese 1
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-20.04, ubuntu-18.04, macos-11, macos-10.15]
+        os: [macos-11, macos-10.15]
 
     steps:
       - uses: actions/checkout@v3
@@ -31,7 +31,7 @@ jobs:
           brew install ripgrep sd
 
           if [[ $(uname -s) == "Darwin" ]]; then
-              for cask in Casks/*.rb; do
+              for cask in Casks/[a-n]*.rb; do
                   pkg=$(echo $cask | sd "Casks/" "" | sd ".rb" "")
                   version=$(brew livecheck $pkg)
                   current=$(echo $version | rg --only-matching "\d[\d.,-]+ ==>" | sd " ==>" "")
@@ -45,6 +45,58 @@ jobs:
                   echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
               done
           fi
+
+  job2:
+    name: Test homebrew-chinese 2
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-11, macos-10.15]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
+
+          if [[ $(uname -s) == "Darwin" ]]; then
+              for cask in Casks/[o-z]*.rb; do
+                  pkg=$(echo $cask | sd "Casks/" "" | sd ".rb" "")
+                  version=$(brew livecheck $pkg)
+                  current=$(echo $version | rg --only-matching "\d[\d.,-]+ ==>" | sd " ==>" "")
+                  echo $current
+                  latest=$(echo $version | rg --only-matching "==> \d[\d.,-]+" | sd "==> " "")
+                  echo $latest
+                  if [[ $current != $latest ]];then
+                    echo "replacing $current by $latest"
+                    sd "$current" "$latest" $cask
+                  fi
+                  echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+              done
+          fi
+
+  job3:
+    name: Test homebrew-chinese 3
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-11, macos-10.15]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
 
           for formula in Formula/*.rb; do
               pkg=$(echo $formula | sd "Formula/" "" | sd ".rb" "")
