@@ -66,16 +66,6 @@ jobs:
 
           if [[ $(uname -s) == "Darwin" ]]; then
               for cask in Casks/[o-z]*.rb; do
-                  pkg=$(echo $cask | sd "Casks/" "" | sd ".rb" "")
-                  version=$(brew livecheck $pkg)
-                  current=$(echo $version | rg --only-matching "\d[\d.,-]+ ==>" | sd " ==>" "")
-                  echo $current
-                  latest=$(echo $version | rg --only-matching "==> \d[\d.,-]+" | sd "==> " "")
-                  echo $latest
-                  if [[ $current != $latest ]];then
-                    echo "replacing $current by $latest"
-                    sd "$current" "$latest" $cask
-                  fi
                   echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
               done
           fi
