@@ -1,6 +1,6 @@
 # 🀄 Homebrew-Chinese 🀄
 
-[![build](https://img.shields.io/github/workflow/status/ivaquero/homebrew-chinese/CI.svg)](https://img.shields.io/github/workflow/status/ivaquero/homebrew-chinese/CI.svg)
+[![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml)
 [![code size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)
 [![repo size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
 [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese)](https://img.shields.io/github/license/ivaquero/homebrew-chinese)
