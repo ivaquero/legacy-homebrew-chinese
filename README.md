@@ -57,7 +57,7 @@ brew search <app_name>
 ```
 
 ```markdown
-brew cask install <app_name>
+brew install --cask <app_name>
 ```
 
 - For specific installation
