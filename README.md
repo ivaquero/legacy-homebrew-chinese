@@ -1,9 +1,9 @@
 # 🀄 Homebrew-Chinese 🀄
 
 [![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml)
+[![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese)](https://github.com/ivaquero/homebrew-chinese/blob/main/LICENSE)
 [![code size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)
 [![repo size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
-[![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese)](https://img.shields.io/github/license/ivaquero/homebrew-chinese)
 
 🇨🇳 🇭🇰 🇲🇴 🇹🇼 一个致力于服务国人的 [Homebrew](https://github.com/Homebrew/brew) 🍺 第三方库
 
