@@ -13,7 +13,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   job1:
-    name: Test homebrew-chinese 1
+    name: Test homebrew-chinese A-N
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -29,25 +29,14 @@ jobs:
           brew tap ivaquero/chinese
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
-
-          if [[ $(uname -s) == "Darwin" ]]; then
-              for cask in Casks/[a-n]*.rb; do
-                  pkg=$(echo $cask | sd "Casks/" "" | sd ".rb" "")
-                  version=$(brew livecheck $pkg)
-                  current=$(echo $version | rg --only-matching "\d[\d.,-]+ ==>" | sd " ==>" "")
-                  echo $current
-                  latest=$(echo $version | rg --only-matching "==> \d[\d.,-]+" | sd "==> " "")
-                  echo $latest
-                  if [[ $current != $latest ]];then
-                    echo "replacing $current by $latest"
-                    sd "$current" "$latest" $cask
-                  fi
-                  echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-              done
-          fi
+          
+          for cask in Casks/[a-n]*.rb; do
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+          done
+          
 
   job2:
-    name: Test homebrew-chinese 2
+    name: Test homebrew-chinese O-Z
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -64,14 +53,13 @@ jobs:
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
 
-          if [[ $(uname -s) == "Darwin" ]]; then
-              for cask in Casks/[o-z]*.rb; do
-                  echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-              done
-          fi
+          for cask in Casks/[o-z]*.rb; do
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+          done
+          
 
   job3:
-    name: Test homebrew-chinese 3
+    name: Test homebrew-chinese formulae
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
