@@ -11,7 +11,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   job1:
     name: Test homebrew-chinese A-N
     runs-on: ${{ matrix.os }}
@@ -34,7 +33,6 @@ jobs:
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
           
-
   job2:
     name: Test homebrew-chinese O-Z
     runs-on: ${{ matrix.os }}
@@ -57,7 +55,6 @@ jobs:
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
           
-
   job3:
     name: Test homebrew-chinese formulae
     runs-on: ${{ matrix.os }}
