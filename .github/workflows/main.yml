@@ -12,7 +12,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   job1:
-    name: Test homebrew-chinese A-N
+    name: Test homebrew-chinese A-F
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -29,12 +29,12 @@ jobs:
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
           
-          for cask in Casks/[a-n]*.rb; do
+          for cask in Casks/[a-f]*.rb; do
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
           
   job2:
-    name: Test homebrew-chinese O-Z
+    name: Test homebrew-chinese G-N
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -51,11 +51,55 @@ jobs:
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
 
-          for cask in Casks/[o-z]*.rb; do
+          for cask in Casks/[g-n]*.rb; do
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
-          
+  
   job3:
+      name: Test homebrew-chinese O-T
+      runs-on: ${{ matrix.os }}
+      strategy:
+        matrix:
+          os: [macos-11, macos-10.15]
+
+      steps:
+        - uses: actions/checkout@v3
+        - name: Set up Homebrew
+          id: set-up-homebrew
+          uses: Homebrew/actions/setup-homebrew@master
+        - name: Test script
+          run: |
+            brew tap ivaquero/chinese
+            cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+            brew install ripgrep sd
+
+            for cask in Casks/[o-t]*.rb; do
+                echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+            done
+  
+  job4:
+      name: Test homebrew-chinese U-Z
+      runs-on: ${{ matrix.os }}
+      strategy:
+        matrix:
+          os: [macos-11, macos-10.15]
+
+      steps:
+        - uses: actions/checkout@v3
+        - name: Set up Homebrew
+          id: set-up-homebrew
+          uses: Homebrew/actions/setup-homebrew@master
+        - name: Test script
+          run: |
+            brew tap ivaquero/chinese
+            cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+            brew install ripgrep sd
+
+            for cask in Casks/[u-z]*.rb; do
+                echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+            done
+
+  job5:
     name: Test homebrew-chinese formulae
     runs-on: ${{ matrix.os }}
     strategy:
