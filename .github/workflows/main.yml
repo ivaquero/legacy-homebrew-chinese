@@ -25,11 +25,11 @@ jobs:
           brew tap ivaquero/chinese
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
-          
+
           for cask in Casks/[a-f]*.rb; do
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
-          
+
   job2:
     name: Test homebrew-chinese G-N
     runs-on: macos-11
@@ -48,44 +48,44 @@ jobs:
           for cask in Casks/[g-n]*.rb; do
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
-  
+
   job3:
-      name: Test homebrew-chinese O-T
-      runs-on: macos-11
+    name: Test homebrew-chinese O-T
+    runs-on: macos-11
 
-      steps:
-        - uses: actions/checkout@v3
-        - name: Set up Homebrew
-          id: set-up-homebrew
-          uses: Homebrew/actions/setup-homebrew@master
-        - name: Test script
-          run: |
-            brew tap ivaquero/chinese
-            cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-            brew install ripgrep sd
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
 
-            for cask in Casks/[o-t]*.rb; do
-                echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-            done
-  
-#   job4:
-#       name: Test homebrew-chinese U-Z
-#       runs-on: macos-11
+          for cask in Casks/[o-t]*.rb; do
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+          done
 
-#       steps:
-#         - uses: actions/checkout@v3
-#         - name: Set up Homebrew
-#           id: set-up-homebrew
-#           uses: Homebrew/actions/setup-homebrew@master
-#         - name: Test script
-#           run: |
-#             brew tap ivaquero/chinese
-#             cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-#             brew install ripgrep sd
+  #   job4:
+  #       name: Test homebrew-chinese U-Z
+  #       runs-on: macos-11
 
-#             for cask in Casks/[u-z]*.rb; do
-#                 echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-#             done
+  #       steps:
+  #         - uses: actions/checkout@v3
+  #         - name: Set up Homebrew
+  #           id: set-up-homebrew
+  #           uses: Homebrew/actions/setup-homebrew@master
+  #         - name: Test script
+  #           run: |
+  #             brew tap ivaquero/chinese
+  #             cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+  #             brew install ripgrep sd
+
+  #             for cask in Casks/[u-z]*.rb; do
+  #                 echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+  #             done
 
   job4:
     name: Test homebrew-chinese formulae

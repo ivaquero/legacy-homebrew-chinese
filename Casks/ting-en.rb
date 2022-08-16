@@ -1,5 +1,5 @@
 cask "ting-en" do
-  version "9.5.0,2022-04-27"
+  version "9.5.0,2022-07-08"
   sha256 :no_check
 
   url "https://static.frdic.com/pkg/ting_en/ting_en.dmg?ver=#{version.csv.second}",
