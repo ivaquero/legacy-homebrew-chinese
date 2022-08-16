@@ -10,7 +10,7 @@ cask "mambaforge-cn" do
     sha256 "6263560d2b0902942841667721dad3621c05f704f6b080d968ad355aeca51486"
   end
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/Miniforge3-#{version}/Mambaforge-#{version}-MacOSX-#{arch}.sh"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/#{version}/Mambaforge-#{version}-MacOSX-#{arch}.sh"
   name "mambaforge"
   desc "Minimal installer for conda with preinstalled support for Mamba"
   homepage "https://github.com/conda-forge/miniforge"
