@@ -1,12 +1,12 @@
 cask "eshelper" do
-  version "4.2.1,1071"
-  sha256 "71c386b764d8d7a06bd66d490008651b4a3d6d5320517b6c742fbd7b6e5a4710"
+  version "4.2.2,1073"
+  sha256 "9c4394e2a71e75905d4b35f883ec8f972d56480b97a9ae7e36130742d0e1b74f"
 
   # static.frdic.com/ was verified as official when first introduced to the cask
   url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version.csv.second}",
       verified:   "static.frdic.com/",
       user_agent: :fake
-  
+
   name "Eshelper"
   name "西语助手"
   desc "Spanish Chinese dictionary and learning tool"
