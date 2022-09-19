@@ -1,22 +1,44 @@
-# 🀄 Homebrew-Chinese 🀄
+<div>
+  <div align="left">
+    <h1 align="left">Homebrew-Chinese</h1>
+    <p>
+      <a>
+        <img
+          src="https://img.shields.io/github/workflow/status/ivaquero/homebrew-chinese/CI.svg"
+        />
+      </a>
+      <a>
+        <img
+          src="https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg"
+        />
+      </a>
+      <a>
+        <img
+          src="https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg"
+        />
+      </a>
+      <a>
+        <img
+          src="https://img.shields.io/github/license/ivaquero/homebrew-chinese"
+        />
+      </a>
+    </p>
+  </div>
 
-[![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml)
-[![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese)](https://github.com/ivaquero/homebrew-chinese/blob/main/LICENSE)
-[![code size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)
-[![repo size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
+  <p></p>
 
-🇨🇳 🇭🇰 🇲🇴 🇹🇼 一个致力于服务国人的 [Homebrew](https://github.com/Homebrew/brew) 🍺 第三方库
-
-<p align="left">
-<a href="README.md">English</a> |
-<a href="README-CN.md">简体中文</a>
-</p>
+  <div>
+    <p>
+      一个致力于服务国人的
+      <a href="https://github.com/Homebrew/brew"> Homebrew </a> 🍺 第三方库
+    </p>
+  </div>
+</div>
 
 本仓库主要收录以下软件：
 
 - 国产软件
 - 开源软件的国内镜像
-- 国人常用开发软件
 
 # 开始 🏃
 
@@ -36,7 +58,7 @@ brew tap ivaquero/chinese
 brew tap ivaquero/chinese
 ```
 
-有关更多信息，请访问 Homebrew 官方网站，网址为 👉 <https://brew.sh/> 👈
+有关更多信息，请访问 Homebrew 官方网站，网址为 👉 https://brew.sh/ 👈
 
 ## 从本仓库安装应用程序 🚅
 
@@ -45,7 +67,7 @@ brew tap ivaquero/chinese
 在终端中运行以下命令：
 
 ```bash
-brew tap ivaquero/chinese
+brew tap integzz/chinese
 brew update
 ```
 
@@ -58,7 +80,7 @@ brew search <app_name>
 ```
 
 ```markdown
-brew install --cask <app_name>
+brew cask install <app_name>
 ```
 
 - For specific installation
@@ -80,17 +102,103 @@ brew update
 brew help
 ```
 
-|      App 名       |     Cask 名     | 原创 | 自动更新 |
-| :---------------: | :-------------: | :--: | :------: |
-|    Qt Designer    |   qt-designer   |  √   |    √     |
-|  M3U8-Downloader  | m3u8-downloader |  √   |    √     |
-| Mambaforge 清华源 |  mambaforge-cn  |  √   |    √     |
-|     爱思助手      |     i4tools     |  √   |    √     |
-|   每日法语听力    |     ting-fr     |  √   |    √     |
-|   每日英语听力    |     ting-en     |  √   |    √     |
-|   每日西语听力    |     ting-es     |  √   |    √     |
-|     西语助手      |    eshelper     |  √   |    √     |
+<details open="false">
+  <summary>Casks</summary>
+  <br />
+  <table id="casks" border="1">
+    <tr>
+      <th>App 名</th>
+      <th>Cask 名</th>
+      <th>原创</th>
+      <th>自动更新</th>
+    </tr>
+    <tr>
+      <td>亿图图示</td>
+      <td>edrawmax (9.2)</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>M3U8-Downloader</td>
+      <td>m3u8-downloader</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>Mambaforge 清华源</td>
+      <td>mambaforge-cn</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>WPS Office 国内版</td>
+      <td>wpsoffice-cn</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>每日法语听力</td>
+      <td>ting-fr</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>每日英语听力</td>
+      <td>ting-en</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>每日西语听力</td>
+      <td>ting-es</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>西语助手</td>
+      <td>eshelper</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+  </table>
+</details>
 
-|     CLI 名     |    Formula 名    | 原创 | 自动更新 |
-| :------------: | :--------------: | :--: | :------: |
-| 网易云音乐 TUI | neteasemusic-tui |  √   |    √     |
+<details open="false">
+  <summary>Formulae</summary>
+  <br />
+  <table id="formulae" border="1">
+    <tr>
+      <th>CLI 名</th>
+      <th>Formula 名</th>
+      <th>是否原创</th>
+      <th>自动更新</th>
+    </tr>
+    <tr>
+      <td>网易云音乐 TUI</td>
+      <td>neteasemusic-tui</td>
+      <td>√</td>
+      <td></td>
+    </tr>
+  </table>
+</details>
+
+<details>
+  <summary>style</summary>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th {
+      text-align: center;
+    }
+    tr {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+    }
+    summary {
+      font-size: large;
+    }
+  </style>
+</details>
