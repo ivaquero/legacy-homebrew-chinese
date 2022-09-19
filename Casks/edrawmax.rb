@@ -1,6 +1,6 @@
 cask "edrawmax" do
   version "9.2"
-  sha256 :no_check
+  sha256 "afd6ee12ad2f8205af9dfbae6418c07f3766ee1e69533eca2c39e2b6636225c3"
 
   language "CN" do
     url "https://www.edrawsoft.com/archives/edrawmax-#{version}.dmg"
