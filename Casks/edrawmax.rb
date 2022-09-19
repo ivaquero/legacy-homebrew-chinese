@@ -5,17 +5,16 @@ cask "edrawmax" do
   language "CN" do
     url "https://www.edrawsoft.com/archives/edrawmax-#{version}.dmg"
     homepage "http://www.edrawsoft.cn/"
-    app "亿图图示.app"
   end
 
   language "en", default: true do
     url "https://www.edrawsoft.com/archives/edrawmax-#{version}.dmg"
     homepage "https://www.edrawsoft.com/"
-    app "EdrawMax.app"
   end
 
   name "EdrawMax"
   desc "Diagram software"
+  app "EdrawMax.app"
 
   zap trash: [
     "~/Library/Edraw",
