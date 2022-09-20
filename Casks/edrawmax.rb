@@ -1,9 +1,9 @@
 cask "edrawmax" do
   version "9.2"
-  sha256 "afd6ee12ad2f8205af9dfbae6418c07f3766ee1e69533eca2c39e2b6636225c3"
+  sha256 "788ad616916cd7bc267cb65086cf03747c09658c5d1213c6f51b1d5022dbe811"
 
   language "CN" do
-    url "https://www.edrawsoft.com/archives/edrawmax-#{version}.dmg"
+    url "https://www.edrawsoft.cn/2download/edrawmax-cn-#{version}.dmg"
     homepage "http://www.edrawsoft.cn/"
   end
 
