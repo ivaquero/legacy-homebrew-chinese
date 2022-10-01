@@ -1,5 +1,5 @@
 cask "i4tools" do
-  version "1.16.026"
+  version "1.17.007"
   sha256 "b91e082f6aa07b455a5d202f9f26a3f98a1d55013a2c6932a064a8a7ee7b8a93"
 
   url "https://url.i4.cn/fqIBBbaa"
