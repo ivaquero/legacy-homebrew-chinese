@@ -1,7 +1,7 @@
 class NM3u8dlRe < Formula
     arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
-    version "0.0.4-beta"
+    version "0.0.5-beta"
 
     if OS.mac?
       url "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v#{version}/N_m3u8DL-RE_Beta_osx-#{arch}_20221017.tar.gz"
