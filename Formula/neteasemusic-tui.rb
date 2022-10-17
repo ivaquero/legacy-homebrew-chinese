@@ -5,10 +5,10 @@ class NeteasemusicTui < Formula
 
   if OS.mac?
     url "https://github.com/betta-cyber/netease-music-tui/releases/download/v#{version}/netease-music-tui-macos.tar.gz"
-    sha256 "9943f835d202bafdd8f39ee9a5bf9dced544773a8e866b97a74ea50707a4e6ad"
+    sha256 "003488c11dffbaafdf61a9e6ff4c4d1597c11bd26d6dbd0b7429ffbb955e33b9"
   elsif OS.linux?
     url "https://github.com/betta-cyber/netease-music-tui/releases/download/v#{version}/netease-music-tui-linux.tar.gz"
-    sha256 "e40e65788e642119574ddb0144c5859d72749080d10bc761cb81c7da34a57f44"
+    sha256 "fce662099cf92d469c001dd20e0e43b1f052fbdd1df346ec96b3b2b466084163"
   end
 
   def install
