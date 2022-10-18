@@ -179,6 +179,12 @@ brew help
       <td>√</td>
       <td></td>
     </tr>
+    <tr>
+      <td>NM3u8dlRe</td>
+      <td>n-m3u8dl-re</td>
+      <td>√</td>
+      <td></td>
+    </tr>
   </table>
 </details>
 
