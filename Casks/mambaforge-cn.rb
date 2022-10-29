@@ -1,14 +1,10 @@
 cask "mambaforge-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "4.14.0-0"
+  version "22.9.0-0"
+  sha256 arm:   "d116ea977a2117068d290a961212f10fdaf1cc6ad156ea14b3979e2e4c0499d9",
+         intel: "03b0af9a3d343da8107edaf75713cea3b79c71aacbbeb8f06507d0dbd26c5218"
 
-  on_intel do
-    sha256 "949f046b4404cc8e081807b048050e6642d8db5520c20d5158a7ef721fbf76c5"
-  end
-  on_arm do
-    sha256 "35d05a65e19b8e5d596964936ddd6023ae66d664a25ba291a52fec18f06a73b6"
-  end
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/Miniforge3-#{version}/Mambaforge-#{version}-MacOSX-#{arch}.sh"
   name "mambaforge"
@@ -16,7 +12,7 @@ cask "mambaforge-cn" do
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url :homepage
+    url :url
     strategy :github_latest
     regex(%r{href=.*?/tag/v?(\d+(?:[._-]\d+)+)["' >]}i)
   end
