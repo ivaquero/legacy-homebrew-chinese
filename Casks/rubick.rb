@@ -8,6 +8,12 @@ cask "rubick" do
   desc "Electron-based plug-in toolbox"
   homepage "https://rubickcenter.github.io/rubick/"
 
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "rubick#{version.major}.app"
 
   zap trash: [
