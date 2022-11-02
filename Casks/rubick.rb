@@ -21,4 +21,5 @@ cask "rubick" do
     "~/Library/Application Support/rubick",
     "~/Library/Preferences/com.muwoo.rubick.plist",
   ]
+
 end

@@ -16,4 +16,11 @@ cask "clash-verge" do
     end
 
     app "Clash Verge.app"
+
+    zap trash: [
+    "~/.config/clash-verge",
+    "~/Library/Preferences/top.gydi.clashverge.plist",
+    "~/Library/Saved Application State/top.gydi.clashverge.savedState",
+  ]
+
 end

@@ -35,4 +35,5 @@ cask "eshelper" do
     "~/Library/Preferences/com.eusoft.eshelper.plist",
     "~/Library/Preferences/group.com.eusoft.eshelper.plist"
   ]
+
 end

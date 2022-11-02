@@ -21,4 +21,5 @@ cask "edrawmax" do
     "~/Library/Preferences/com.edrawsoft.edrawmax.plist",
     "~/Library/Saved Application State/com.edrawsoft.edrawmax.savedState",
   ]
+
 end
