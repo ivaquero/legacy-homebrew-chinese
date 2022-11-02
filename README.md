@@ -102,18 +102,19 @@ brew update
 brew help
 ```
 
-|      App 名       |     Cask 名     | 原创 |
-| :---------------: | :-------------: | :--: |
-|   亿图图示 9.2    | edrawmax (9.2)  |  √   |
-|  M3U8Downloader   | m3u8-downloader |  √   |
-| Mambaforge 清华源 |  mambaforge-cn  |  √   |
-|      Rubick       |     rubick      |      |
-|    WPS Office     |  wpsoffice-cn   |  √   |
-|   每日法语听力    |     ting-fr     |  √   |
-|   每日英语听力    |     ting-en     |  √   |
-|   每日西语听力    |     ting-es     |  √   |
-|     西语助手      |    eshelper     |  √   |
+|      App 名       |     Cask 名     | 原创  |
+| :---------------: | :-------------: | :---: |
+|   亿图图示 9.2    | edrawmax (9.2)  |   √   |
+|    Clash-Verge    |   clash-verge   |   √   |
+|  M3U8Downloader   | m3u8-downloader |   √   |
+| Mambaforge 清华源 |  mambaforge-cn  |   √   |
+|      Rubick       |     rubick      |   √   |
+|    WPS Office     |  wpsoffice-cn   |   √   |
+|   每日法语听力    |     ting-fr     |   √   |
+|   每日英语听力    |     ting-en     |   √   |
+|   每日西语听力    |     ting-es     |   √   |
+|     西语助手      |    eshelper     |   √   |
 
-|     CLI 名     |    Formula 名    | 原创 | 自动更新 |
-| :------------: | :--------------: | :--: | :------: |
-| 网易云音乐 TUI | neteasemusic-tui |  √   |
+|     CLI 名     |    Formula 名    | 原创  | 自动更新 |
+| :------------: | :--------------: | :---: | :------: |
+| 网易云音乐 TUI | neteasemusic-tui |   √   |
