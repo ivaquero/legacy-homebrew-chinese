@@ -4,15 +4,16 @@
 
   url "https://github.com/ParetoSecurity/pareto-mac/releases/download/#{version}/ParetoSecurity.dmg"
   name "Pareto Security"
-  desc "Automatically audit your Mac for basic security hygiene."
-  homepage "https://github.com/ParetoSecurity/pareto-mac"
-
-  depends_on macos: ">= :sierra"
-
-  app "Pareto Security.app"
+  desc "Automatically audit your computer for basic security hygiene"
+  homepage "https://paretosecurity.com"
 
   livecheck do
     url :url
     strategy :github_latest
   end
+
+  depends_on macos: ">= :sierra"
+
+  app "Pareto Security.app"
+
 end
