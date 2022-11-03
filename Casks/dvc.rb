@@ -4,7 +4,7 @@ cask "dvc" do
 
   # github.com/iterative/dvc/ was verified as official when first introduced to the cask
   url "https://github.com/iterative/dvc/releases/download/#{version}/dvc-#{version}.pkg"
-    verified: "https://github.com/iterative/dvc/"
+    verified: "https://github.com/iterative/dvc/",
   name "dvc"
   desc "Open-source Version Control System for Machine Learning Projects"
   homepage "https://dvc.org/"
@@ -18,7 +18,10 @@ cask "dvc" do
 
   pkg "dvc-#{version}.pkg"
 
-  uninstall pkgutil:
+  uninstall delete:  [
+      "~/Library/Application Support/dvc",
+      "~/Library/Application Support/iterative",
+    ]
 
   zap trash: [
     "~/Library/Application Support/dvc",
