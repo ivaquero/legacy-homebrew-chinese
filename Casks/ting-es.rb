@@ -3,23 +3,11 @@ cask "ting-es" do
   sha256 :no_check
 
   # static.frdic.com/ was verified as official when first introduced to the cask
-  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?ver=#{version.csv.second}",
+  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg",
     verified: "static.frdic.com/",
     user_agent: :fake
   name "每日西语听力"
   homepage "http://www.francochinois.com/v4/es/app/ting"
-
-  livecheck do
-      url "http://www.francochinois.com/v4/es/app/history?appkey=eusoft_ting_es"
-      strategy :page_match do |page|
-        v = page.scan(regex(/\d+\.\d+\.\d+/i)).first
-        year, month, day = page.scan(regex(/\d{4}年\d+月\d+日/i)).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
-        date = format("%<y>d-%<m>02d-%<d>02d", y: year, m: month, d: day)
-        next if v.blank? || date.blank?
-
-        "#{v},#{date}"
-      end
-  end
 
   depends_on macos: ">= :sierra"
   app "每日西语听力.app"
