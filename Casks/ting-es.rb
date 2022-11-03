@@ -11,18 +11,17 @@ cask "ting-es" do
   livecheck do
       url "http://www.francochinois.com/v4/es/app/history?appkey=eusoft_ting_es"
       strategy :page_match do |page|
-        v = page.scan(%r{\d+\.\d+\.\d+}i).first
-        year, month, day = page.scan(%r{\d{4}年\d+月\d+日}i).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
-        date = "%<>d-%<02>d-%<02>d" % [year, month, day]
+        v = page.scan(regex(/\d+\.\d+\.\d+/i)).first
+        year, month, day = page.scan(regex(/\d{4}年\d+月\d+日/i)).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
+        date = format("%d-%02d-%02d", year, month, day)
         next if v.blank? || date.blank?
 
         "#{v},#{date}"
       end
   end
 
-  app "每日西语听力.app"
-
   depends_on macos: ">= :sierra"
+  app "每日西语听力.app"
 
   zap trash: [
     "~/Library/Application Support/ting_es",
