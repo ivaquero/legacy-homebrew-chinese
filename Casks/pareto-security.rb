@@ -5,7 +5,7 @@
   url "https://github.com/ParetoSecurity/pareto-mac/releases/download/#{version}/ParetoSecurity.dmg"
   name "Pareto Security"
   desc "Automatically audit your Mac for basic security hygiene."
-  homepage "paretosecurity.com"
+  homepage "https://paretosecurity.com"
 
   depends_on macos: ">= :sierra"
 
