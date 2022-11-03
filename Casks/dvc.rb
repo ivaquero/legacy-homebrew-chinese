@@ -9,8 +9,7 @@ cask "dvc" do
 
   livecheck do
     url "https://dvc.org/"
-    regex(/href=.*?\/download\/osx\/dvc-(\d+(?:\.\d+)*)\.pkg/i)
-    end
+    regex(/href=.*?dvc-(\d+(?:\.\d+)*)/i)
   end
 
   depends_on macos: ">= :mojave"
