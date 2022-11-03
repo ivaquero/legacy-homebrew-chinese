@@ -33,6 +33,6 @@ cask "eshelper" do
     "~/Library/Eudb_es",
     "~/Library/Preferences/com.eusoft.eshelper.LightPeek.plist",
     "~/Library/Preferences/com.eusoft.eshelper.plist",
-    "~/Library/Preferences/group.com.eusoft.eshelper.plist"
+    "~/Library/Preferences/group.com.eusoft.eshelper.plist",
   ]
 end
