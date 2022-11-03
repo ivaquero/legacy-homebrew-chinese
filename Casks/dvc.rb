@@ -7,11 +7,20 @@ cask "dvc" do
   desc "Open-source Version Control System for Machine Learning Projects"
   homepage "https://dvc.org/"
 
-  depends_on macos: ">= :mojave"
+  livecheck do
+    url "https://dvc.org/"
+    strategy :page_match do |page|
+      match = page.match(/download/osx/dvc-(\d+(?:\.\d+)+)-(\d+)\.dmg/i)
+      next if match.blank?
 
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
+  depends_on macos: ">= :mojave"
   pkg "dvc-#{version}.pkg"
 
-  uninstall pkgutil: 'com.iterative.dvc'
+  uninstall pkgutil: "com.iterative.dvc"
 
   zap trash: [
     "~/Library/Application Support/dvc",
