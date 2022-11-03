@@ -1,14 +1,14 @@
 cask "edrawmax" do
   version "9.2"
-  sha256 "788ad616916cd7bc267cb65086cf03747c09658c5d1213c6f51b1d5022dbe811"
+  sha256 :no_check
 
   language "CN", default: true do
-    url "https://www.edrawsoft.cn/2download/edrawmax-cn-#{version}.dmg"
+    url "https://www.edrawsoft.cn/2download/edrawmax-cn-9.2.dmg"
     homepage "http://www.edrawsoft.cn/"
   end
 
   language "en" do
-    url "https://www.edrawsoft.com/archives/edrawmax-#{version}.dmg"
+    url "https://www.edrawsoft.com/archives/edrawmax-9.2.dmg"
     homepage "https://www.edrawsoft.com/"
   end
 
@@ -21,5 +21,4 @@ cask "edrawmax" do
     "~/Library/Preferences/com.edrawsoft.edrawmax.plist",
     "~/Library/Saved Application State/com.edrawsoft.edrawmax.savedState",
   ]
-
 end

@@ -12,7 +12,7 @@ cask "m3u8-downloader" do
   url "https://github.com/HeiSir2014/M3U8-Downloader/releases/download/v#{version}/M3U8-Downloader-mac_#{arch}-#{version}.dmg"
   name "M3U8-Downloader"
   desc "Open-source M3U8 Downloader"
-  homepage "https://tools.heisir.cn/HLSDownload/"
+  homepage "https://github.com/HeiSir2014/M3U8-Downloader/"
 
   livecheck do
     url :url
@@ -28,5 +28,4 @@ cask "m3u8-downloader" do
     "~/Library/Preferences/cn.heisir.m3u8-downloader-mac.plist",
     "~/Library/Saved Application State/cn.heisir.m3u8-downloader-mac.savedState",
   ]
-
 end

@@ -1,6 +1,6 @@
 cask "i4tools" do
   version "1.17.007"
-  sha256 "7120b8ad14e4a083abc6b9f10c656ac35bf0d6fa8816dc8e6bb99c887f16412a"
+  sha256 :no_check
 
   url "https://url.i4.cn/fqIBBbaa"
   name "i4Tools"
@@ -26,5 +26,4 @@ cask "i4tools" do
     "~/Library/Preferences/org.example.i4AirPlayer.plist",
     "~/Library/Saved Application State/org.example.i4AirPlayer.savedState",
   ]
-
 end

@@ -8,7 +8,6 @@ cask "rubick" do
   desc "Electron-based plug-in toolbox"
   homepage "https://rubickcenter.github.io/rubick/"
 
-
   livecheck do
     url :url
     strategy :github_latest
@@ -21,5 +20,4 @@ cask "rubick" do
     "~/Library/Application Support/rubick",
     "~/Library/Preferences/com.muwoo.rubick.plist",
   ]
-
 end

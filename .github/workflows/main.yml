@@ -27,8 +27,13 @@ jobs:
           brew install ripgrep sd
 
           for cask in Casks/[a-f]*.rb; do
+<<<<<<< HEAD
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew audit --cask --online
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+||||||| 4cd065c
+=======
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+>>>>>>> f8c820d3c9472c4f1e344c080a7f4a589a6e9164
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
 
@@ -48,8 +53,13 @@ jobs:
           brew install ripgrep sd
 
           for cask in Casks/[g-n]*.rb; do
+<<<<<<< HEAD
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew audit --cask --online
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+||||||| 4cd065c
+=======
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+>>>>>>> f8c820d3c9472c4f1e344c080a7f4a589a6e9164
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
 
@@ -69,8 +79,13 @@ jobs:
           brew install ripgrep sd
 
           for cask in Casks/[o-t]*.rb; do
+<<<<<<< HEAD
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew audit --cask --online
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+||||||| 4cd065c
+=======
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew style --fix
+>>>>>>> f8c820d3c9472c4f1e344c080a7f4a589a6e9164
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
 
