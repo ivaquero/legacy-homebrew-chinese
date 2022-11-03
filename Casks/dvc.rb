@@ -1,27 +1,17 @@
 cask "dvc" do
-  version "2.33.2"
-  sha256 "ceebcb6be244f6fdb5c6329ccd0ceb2cc25c727c6a4929f7d690716a708b90af"
+  version "2.31.0"
+  sha256 "16d24e2983c70480da37fea817c68455a8500ac86ead36395fb043994f778775"
 
-  # github.com/iterative/dvc/ was verified as official when first introduced to the cask
-  url "https://github.com/iterative/dvc/releases/download/#{version}/dvc-#{version}.pkg"
-    verified: "https://github.com/iterative/dvc/",
+  url "https://dvc.org/download/osx/dvc-#{version}"
   name "dvc"
   desc "Open-source Version Control System for Machine Learning Projects"
   homepage "https://dvc.org/"
-
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
 
   depends_on macos: ">= :mojave"
 
   pkg "dvc-#{version}.pkg"
 
-  uninstall delete:  [
-      "~/Library/Application Support/dvc",
-      "~/Library/Application Support/iterative",
-    ]
+  uninstall pkgutil: 'com.iterative.dvc'
 
   zap trash: [
     "~/Library/Application Support/dvc",
