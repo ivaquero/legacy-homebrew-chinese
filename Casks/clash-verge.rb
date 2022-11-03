@@ -22,5 +22,4 @@ cask "clash-verge" do
     "~/Library/Preferences/top.gydi.clashverge.plist",
     "~/Library/Saved Application State/top.gydi.clashverge.savedState",
   ]
-
 end

@@ -16,11 +16,8 @@ cask "ting-en" do
       strategy :page_match do |page|
         v = page.scan(%r{\d+\.\d+\.\d+}i).first
         year, month, day  = page.scan(%r{\d{4}年\d+月\d+日}i).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
-
         date = "%d-%02d-%02d" % [year, month, day]
-
         next if v.blank? || date.blank?
-
         "#{v},#{date}"
       end
   end
@@ -33,5 +30,4 @@ cask "ting-en" do
     "~/Library/Preferences/com.eusoft.ting.en.plist",
     "~/Library/Saved Application State/com.eusoft.ting.en.savedState"
   ]
-
 end

@@ -15,5 +15,4 @@
     url :url
     strategy :github_latest
   end
-
 end
