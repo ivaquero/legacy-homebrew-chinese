@@ -2,9 +2,10 @@ cask "ting-fr" do
   version "9.5.2,2022-09-19"
   sha256 :no_check
 
+  # static.frdic.com/ was verified as official when first introduced to the cask
   url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?ver=#{version.csv.second}",
-      verified:   "static.frdic.com/",
-      user_agent: :fake
+    verified: "static.frdic.com/",
+    user_agent: :fake
   name "每日法语听力"
   homepage "http://www.francochinois.com/v4/fr/app/ting"
 
@@ -13,7 +14,7 @@ cask "ting-fr" do
       strategy :page_match do |page|
         v = page.scan(regex(/\d+\.\d+\.\d+/i)).first
         year, month, day = page.scan(regex(/\d{4}年\d+月\d+日/i)).second.sub("年", "-").sub("月", "-").sub("日", "").split("-")
-        date = format("%d-%02d-%02d", year, month, day)
+        date = format("%<y>d-%<m>02d-%<d>02d", y: year, m: month, d: day)
         next if v.blank? || date.blank?
 
         "#{v},#{date}"

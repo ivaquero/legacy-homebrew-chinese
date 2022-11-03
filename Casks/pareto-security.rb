@@ -2,10 +2,11 @@
   version "1.7.36"
   sha256 "b212b1e03fcc6953c04b272f4bad435935d3dc9df24a49720308db070ea03193"
 
+  # github.com/ParetoSecurity/pareto-mac/ was verified as official when first introduced to the cask
   url "https://github.com/ParetoSecurity/pareto-mac/releases/download/#{version}/ParetoSecurity.dmg"
   name "Pareto Security"
   desc "Automatically audit your computer for basic security hygiene"
-  homepage "https://paretosecurity.com"
+  homepage "https://paretosecurity.com/"
 
   livecheck do
     url :url
@@ -15,5 +16,4 @@
   depends_on macos: ">= :sierra"
 
   app "Pareto Security.app"
-
 end

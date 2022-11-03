@@ -6,7 +6,6 @@ cask "edrawmax" do
     url "https://www.edrawsoft.cn/2download/edrawmax-cn-9.2.dmg"
     homepage "http://www.edrawsoft.cn/"
   end
-
   language "en" do
     url "https://www.edrawsoft.com/archives/edrawmax-9.2.dmg"
     homepage "https://www.edrawsoft.com/"
@@ -14,6 +13,7 @@ cask "edrawmax" do
 
   name "EdrawMax"
   desc "Diagram software"
+
   app "EdrawMax.app"
 
   zap trash: [
