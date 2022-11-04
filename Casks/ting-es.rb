@@ -4,7 +4,7 @@ cask "ting-es" do
 
   # static.frdic.com/ was verified as official when first introduced to the cask
   url "https://static.frdic.com/pkg/ting_es/ting_es.dmg",
-      verified: "static.frdic.com/",
+      verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日西语听力"
   homepage "http://www.francochinois.com/v4/es/app/ting"

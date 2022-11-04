@@ -2,7 +2,6 @@ cask "m3u8-downloader" do
   arch arm: "arm64", intel: "x64"
 
   version "2.0.7"
-
   sha256 arm:   "ac5ad32fe771ad09539f3dadfec65ff5b956de76316774f87b2abc6901d4c103",
          intel: "033e5383fec82327196d8a58834a50f95a37d2e4dde9f397cdd34317a2a7d8d7"
 

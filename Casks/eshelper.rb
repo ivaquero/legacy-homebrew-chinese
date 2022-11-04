@@ -4,7 +4,7 @@ cask "eshelper" do
 
   # static.frdic.com/ was verified as official when first introduced to the cask
   url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version}",
-      verified: "static.frdic.com/",
+      verified:   "static.frdic.com/",
       user_agent: :fake
   name "Eshelper"
   name "西语助手"

@@ -16,7 +16,8 @@ cask "dvc" do
 
   pkg "dvc-#{version}.pkg"
 
-  uninstall pkgutil: "com.iterative.dvc"
+  uninstall quit: "com.iterative.dvc",
+            pkgutil: "com.iterative.dvc"
 
   zap trash: [
     "~/Library/Application Support/dvc",
