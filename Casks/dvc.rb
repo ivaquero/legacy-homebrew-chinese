@@ -13,6 +13,7 @@ cask "dvc" do
   end
 
   depends_on macos: ">= :mojave"
+
   pkg "dvc-#{version}.pkg"
 
   uninstall pkgutil: "com.iterative.dvc"

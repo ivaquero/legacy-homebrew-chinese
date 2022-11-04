@@ -4,17 +4,16 @@ cask "eshelper" do
 
   # static.frdic.com/ was verified as official when first introduced to the cask
   url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version}",
-    verified: "static.frdic.com/",
-    user_agent: :fake
-
+      verified: "static.frdic.com/",
+      user_agent: :fake
   name "Eshelper"
   name "西语助手"
   desc "Spanish Chinese dictionary and learning tool"
   homepage "http://www.francochinois.com/v4/es/app/download"
 
   livecheck do
-      url "http://www.francochinois.com/v4/es/app/download"
-      strategy :sparkle
+    url "http://www.francochinois.com/v4/es/app/download"
+    strategy :sparkle
   end
 
   app "Eudic_es.app"
