@@ -1,13 +1,18 @@
 cask "ting-es" do
-  version "9.5.2,2022-09-19"
+  version "2022-10-24"
   sha256 :no_check
 
   # static.frdic.com/ was verified as official when first introduced to the cask
-  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg",
+  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?ver=#{version}",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日西语听力"
   homepage "http://www.francochinois.com/v4/es/app/ting"
+
+  livecheck do
+    url "http://www.francochinois.com/v4/es/app/ting"
+    regex(/href=.*?dmg\?ver=(\d+(?:-\d+)*)/i)
+  end
 
   depends_on macos: ">= :sierra"
 
