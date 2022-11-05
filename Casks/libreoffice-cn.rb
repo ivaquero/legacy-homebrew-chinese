@@ -6,7 +6,7 @@ cask "libreoffice-cn" do
   sha256 arm:   "382682d2d7f8d190dd4749ac861cea102116c9d7395c93c947d104fd5b024d44",
          intel: "3f5540d71662f5ba6cfa98c5c316ad3367e38065efb2d0f32c2b93be7ee78b4e"
 
-  url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
+  url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"
   name "LibreOffice"
   desc "Office suite"
