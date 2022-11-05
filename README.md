@@ -108,6 +108,7 @@ brew help
 |   Clash-Verge    |   clash-verge   |  √   |
 |       DVC        |       dvc       |  √   |
 |     爱斯助手     |     i4tools     |  √   |
+|  BasicTeX 镜像   |   basictex-cn   |  √   |
 |    IINA 镜像     |     iina-cn     |  √   |
 |    Julia 镜像    |    julia-cn     |  √   |
 | LibreOffice 镜像 | libreoffice-cn  |  √   |
@@ -118,6 +119,7 @@ brew help
 | Qt Creator 镜像  |   qt-creator    |  √   |
 |      Rubick      |     rubick      |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |  √   |
+|     VLC 镜像     |     vlc-cn      |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |  √   |
 |    WPS Office    |  wpsoffice-cn   |  √   |
 |   每日法语听力   |     ting-fr     |  √   |
