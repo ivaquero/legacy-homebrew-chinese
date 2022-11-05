@@ -16,7 +16,7 @@ cask "julia-cn" do
     regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+)[._-]mac#{arch.delete_prefix("x")}\.dmg/i)
   end
 
-  # app "Julia-#{version.major_minor}.app"
+  app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
 
   zap trash: [

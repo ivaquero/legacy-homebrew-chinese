@@ -37,8 +37,9 @@
 
 本仓库主要收录以下软件：
 
-- 国产软件
 - 开源软件的国内镜像
+- 国人开发的开源软件（主要服务于国人，未被 Homebrew 官方收录）
+- 国产商业软件
 
 # 开始 🏃
 
@@ -102,27 +103,27 @@ brew update
 brew help
 ```
 
-|      App 名      |     Cask 名     | 原创 |
-| :--------------: | :-------------: | :--: |
-|    亿图图示 9    |    edrawmax     |  √   |
-|   Clash-Verge    |   clash-verge   |  √   |
-|       DVC        |       dvc       |  √   |
-|     爱斯助手     |     i4tools     |  √   |
-|  BasicTeX 镜像   |   basictex-cn   |  √   |
-|    IINA 镜像     |     iina-cn     |  √   |
-|    Julia 镜像    |    julia-cn     |  √   |
-| LibreOffice 镜像 | libreoffice-cn  |  √   |
-|     Lyx 镜像     |     lyx-cn      |  √   |
-|  M3U8Downloader  | m3u8-downloader |  √   |
-| Mambaforge 镜像  |  mambaforge-cn  |  √   |
-| OBS Studio 镜像  |     obs-cn      |  √   |
-| Qt Creator 镜像  |   qt-creator    |  √   |
-|      Rubick      |     rubick      |  √   |
-|  TeXStudio 镜像  |  texstudio-cn   |  √   |
-|     VLC 镜像     |     vlc-cn      |  √   |
-|  VSCodium 镜像   |   vscodium-cn   |  √   |
-|    WPS Office    |  wpsoffice-cn   |  √   |
-|   每日法语听力   |     ting-fr     |  √   |
-|   每日英语听力   |     ting-en     |  √   |
-|   每日西语听力   |     ting-es     |  √   |
-|     西语助手     |    eshelper     |  √   |
+|      App 名      |     Cask 名     |         类型         | 原创 |
+| :--------------: | :-------------: | :------------------: | :--: |
+|       DVC        |       dvc       |       开源软件       |  √   |
+|   Clash-Verge    |   clash-verge   | 开源软件（国人开发） |  √   |
+|  M3U8Downloader  | m3u8-downloader | 开源软件（国人开发） |  √   |
+|      Rubick      |     rubick      | 开源软件（国人开发） |  √   |
+|  BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |  √   |
+|    IINA 镜像     |     iina-cn     |     开源软件镜像     |  √   |
+|    Julia 镜像    |    julia-cn     |     开源软件镜像     |  √   |
+| LibreOffice 镜像 | libreoffice-cn  |     开源软件镜像     |  √   |
+|     Lyx 镜像     |     lyx-cn      |     开源软件镜像     |  √   |
+| Mambaforge 镜像  |  mambaforge-cn  |     开源软件镜像     |  √   |
+| OBS Studio 镜像  |     obs-cn      |     开源软件镜像     |  √   |
+| Qt Creator 镜像  |   qt-creator    |     开源软件镜像     |  √   |
+|  TeXStudio 镜像  |  texstudio-cn   |     开源软件镜像     |  √   |
+|     VLC 镜像     |     vlc-cn      |     开源软件镜像     |  √   |
+|  VSCodium 镜像   |   vscodium-cn   |     开源软件镜像     |  √   |
+|    WPS Office    |  wpsoffice-cn   |       国产软件       |  √   |
+|     西语助手     |    eshelper     |     国产商业软件     |  √   |
+|   每日法语听力   |     ting-fr     |     国产商业软件     |  √   |
+|   每日英语听力   |     ting-en     |     国产商业软件     |  √   |
+|   每日西语听力   |     ting-es     |     国产商业软件     |  √   |
+|     爱斯助手     |     i4tools     |     国产商业软件     |  √   |
+|    亿图图示 9    |    edrawmax     |     国产商业软件     |  √   |

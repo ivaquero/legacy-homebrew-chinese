@@ -44,6 +44,7 @@ jobs:
           brew tap ivaquero/chinese
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           brew install ripgrep sd
+          brew uninstall julia
 
           for cask in Casks/[g-n]*.rb; do
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install

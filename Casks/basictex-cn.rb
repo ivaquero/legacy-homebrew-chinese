@@ -1,4 +1,4 @@
-cask "basictex" do
+cask "basictex-cn" do
   version "2022.0314"
   sha256 "5ef0678318c2b947b78b77c0cddae09e763359596c6c1fd0362f5cdca9714b78"
 
