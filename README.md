@@ -114,6 +114,7 @@ brew help
 | Mambaforge 镜像 |  mambaforge-cn  |  √   |
 | OBS Studio 镜像 |     obs-cn      |  √   |
 |     Rubick      |     rubick      |  √   |
+| TeXStudio 镜像  |  texstudio-cn   |  √   |
 |  VSCodium 镜像  |   vscodium-cn   |  √   |
 |   WPS Office    |  wpsoffice-cn   |  √   |
 |  每日法语听力   |     ting-fr     |  √   |

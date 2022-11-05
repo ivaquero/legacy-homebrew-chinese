@@ -1,4 +1,4 @@
-cask "obs" do
+cask "obs-cn" do
     arch arm: "arm64", intel: "x86_64"
 
     version "28.1.1"
