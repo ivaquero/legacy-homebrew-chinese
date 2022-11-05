@@ -104,7 +104,7 @@ brew help
 
 |      App 名      |     Cask 名     | 原创 |
 | :--------------: | :-------------: | :--: |
-|    亿图图示 9    |   edrawmax@9    |  √   |
+|    亿图图示 9    |    edrawmax     |  √   |
 |   Clash-Verge    |   clash-verge   |  √   |
 |       DVC        |       dvc       |  √   |
 |     爱斯助手     |     i4tools     |  √   |
@@ -115,6 +115,8 @@ brew help
 |  M3U8Downloader  | m3u8-downloader |  √   |
 | Mambaforge 镜像  |  mambaforge-cn  |  √   |
 | OBS Studio 镜像  |     obs-cn      |  √   |
+| Qt Creator 镜像  |   qt-creator    |  √   |
+|   Qt Designer    |   qt-designer   |  √   |
 |      Rubick      |     rubick      |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |  √   |

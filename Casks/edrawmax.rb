@@ -1,4 +1,4 @@
-cask "edrawmax@9" do
+cask "edrawmax" do
   version "9.2"
   sha256 :no_check
 
