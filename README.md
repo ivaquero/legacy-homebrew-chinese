@@ -102,17 +102,21 @@ brew update
 brew help
 ```
 
-|      App 名       |     Cask 名     | 原创 |
-| :---------------: | :-------------: | :--: |
-|   亿图图示 9.2    | edrawmax (9.2)  |  √   |
-|    Clash-Verge    |   clash-verge   |  √   |
-|        DVC        |       dvc       |  √   |
-|     爱斯助手      |     i4tools     |  √   |
-|  M3U8Downloader   | m3u8-downloader |  √   |
-| Mambaforge 清华源 |  mambaforge-cn  |  √   |
-|      Rubick       |     rubick      |  √   |
-|    WPS Office     |  wpsoffice-cn   |  √   |
-|   每日法语听力    |     ting-fr     |  √   |
-|   每日英语听力    |     ting-en     |  √   |
-|   每日西语听力    |     ting-es     |  √   |
-|     西语助手      |    eshelper     |  √   |
+|     App 名      |     Cask 名     | 原创 |
+| :-------------: | :-------------: | :--: |
+|  亿图图示 9.2   | edrawmax (9.2)  |  √   |
+|   Clash-Verge   |   clash-verge   |  √   |
+|       DVC       |       dvc       |  √   |
+|    爱斯助手     |     i4tools     |  √   |
+|   Julia 镜像    |    julia-cn     |  √   |
+|    Lyx 镜像     |     lyx-cn      |  √   |
+| M3U8Downloader  | m3u8-downloader |  √   |
+| Mambaforge 镜像 |  mambaforge-cn  |  √   |
+| OBS Studio 镜像 |     obs-cn      |  √   |
+|     Rubick      |     rubick      |  √   |
+|  VSCodium 镜像  |   vscodium-cn   |  √   |
+|   WPS Office    |  wpsoffice-cn   |  √   |
+|  每日法语听力   |     ting-fr     |  √   |
+|  每日英语听力   |     ting-en     |  √   |
+|  每日西语听力   |     ting-es     |  √   |
+|    西语助手     |    eshelper     |  √   |
