@@ -104,7 +104,7 @@ brew help
 
 |     App 名      |     Cask 名     | 原创 |
 | :-------------: | :-------------: | :--: |
-|  亿图图示 9.2   | edrawmax (9.2)  |  √   |
+|   亿图图示 9    |   edrawmax@9    |  √   |
 |   Clash-Verge   |   clash-verge   |  √   |
 |       DVC       |       dvc       |  √   |
 |    爱斯助手     |     i4tools     |  √   |
