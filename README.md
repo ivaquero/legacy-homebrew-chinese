@@ -116,7 +116,6 @@ brew help
 | Mambaforge 镜像  |  mambaforge-cn  |  √   |
 | OBS Studio 镜像  |     obs-cn      |  √   |
 | Qt Creator 镜像  |   qt-creator    |  √   |
-|   Qt Designer    |   qt-designer   |  √   |
 |      Rubick      |     rubick      |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |  √   |
