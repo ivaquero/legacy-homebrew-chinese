@@ -1,39 +1,8 @@
-<div>
-  <div align="left">
-    <h1 align="left">Homebrew-Chinese</h1>
-    <p>
-      <a>
-        <img
-          src="https://img.shields.io/github/workflow/status/ivaquero/homebrew-chinese/CI.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/license/ivaquero/homebrew-chinese"
-        />
-      </a>
-    </p>
-  </div>
+# Homebrew-Chinese
 
-  <p></p>
+[![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml) [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/license/homebrew-chinese.svg) [![code-size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg) [![repo-size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
 
-  <div>
-    <p>
-      一个致力于服务国人的
-      <a href="https://github.com/Homebrew/brew"> Homebrew </a> 🍺 第三方库
-    </p>
-  </div>
-</div>
+一个致力于服务国人的 [Homebrew](https://github.com/Homebrew/brew) 🍺 第三方库
 
 本仓库主要收录以下软件：
 
@@ -59,7 +28,7 @@ brew tap ivaquero/chinese
 brew tap ivaquero/chinese
 ```
 
-有关更多信息，请访问 Homebrew 官方网站，网址为 👉 https://brew.sh/ 👈
+更多相关信息，请访问 Homebrew 官方网站 👉 https://brew.sh/ 👈
 
 ## 从本仓库安装应用程序 🚅
 
