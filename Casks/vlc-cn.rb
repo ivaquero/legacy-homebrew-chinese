@@ -1,4 +1,4 @@
-cask "vlc" do
+cask "vlc-cn" do
   arch arm: "arm64", intel: "intel64"
 
   version "3.0.17.3"
