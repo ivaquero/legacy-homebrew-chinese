@@ -3,7 +3,7 @@ cask "blender-cn" do
 
   version "3.3.1"
   sha256 arm:   "e4a19540ad98222ebb23115fb1fdac04ba04501f4d8aa3d8b82c61d8757e1cd6",
-         intel: "6af68af6d43ac184ff0899d0ced2fc29006984fffee6a805825d7e67c48ee23f"
+         intel: "94916e019d6609be2515f3d42f00df1749da4e6e6211d89ec64e8509dc8fbbbc"
 
   url "https://mirror.nju.edu.cn/download/Blender/blender-#{version}-macos-#{arch}.dmg"
   name "Blender"
