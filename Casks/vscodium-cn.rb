@@ -12,6 +12,7 @@ cask "vscodium-cn" do
   homepage "https://github.com/VSCodium/vscodium"
 
   auto_updates true
+  conflicts_with cask: "vscodium"
 
   app "VSCodium.app"
   binary "#{appdir}/VSCodium.app/Contents/Resources/app/bin/codium"

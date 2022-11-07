@@ -8,6 +8,7 @@ cask "texstudio-cn" do
   desc "LaTeX editor"
   homepage "https://texstudio.org/"
 
+  conflicts_with cask: "texstudio"
   depends_on macos: ">= :big_sur"
 
   app "texstudio.app"

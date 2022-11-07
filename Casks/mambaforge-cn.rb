@@ -19,6 +19,7 @@ cask "mambaforge-cn" do
 
   auto_updates true
   conflicts_with cask: [
+    "mambaforge",
     "miniconda",
     "miniforge",
   ]

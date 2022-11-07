@@ -15,7 +15,8 @@ cask "blender-cn" do
     regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]#{arch}\.dmg}i)
   end
 
-  conflicts_with cask: "homebrew/cask-versions/blender-lts"
+  conflicts_with cask: ["homebrew/cask-versions/blender-lts",
+                        "blender"]
   depends_on macos: ">= :high_sierra"
 
   app "Blender.app"

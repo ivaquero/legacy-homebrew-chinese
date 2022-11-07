@@ -17,7 +17,7 @@ cask "vlc-cn" do
   end
 
   auto_updates true
-  conflicts_with cask: "homebrew/cask-versions/vlc-nightly"
+  conflicts_with cask: ["homebrew/cask-versions/vlc-nightly", "vlc"]
 
   app "VLC.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

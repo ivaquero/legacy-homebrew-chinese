@@ -13,6 +13,8 @@ cask "lyx-cn" do
     regex(/LyX-(\d+(?:\.\d+)*)\+qt5/i)
   end
 
+  conflicts_with cask: "lyx"
+
   app "LyX.app"
   binary "#{appdir}/LyX.app/Contents/MacOS/inkscape", target: "lyx-inkscape"
   binary "#{appdir}/LyX.app/Contents/MacOS/lyx"

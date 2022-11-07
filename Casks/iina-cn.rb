@@ -14,6 +14,7 @@ cask "iina-cn" do
   end
 
   auto_updates true
+  conflicts_with cask: "iina"
   depends_on macos: ">= :el_capitan"
 
   app "IINA.app"

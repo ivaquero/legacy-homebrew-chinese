@@ -19,6 +19,7 @@ cask "basictex-cn" do
   end
 
   conflicts_with cask: [
+    "basictex",
     "mactex-no-gui",
     "mactex",
   ]
