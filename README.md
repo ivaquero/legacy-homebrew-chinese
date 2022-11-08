@@ -78,6 +78,7 @@ brew help
 |   Clash-Verge    |   clash-verge   | 开源软件（国人开发） |  √   |
 |  M3U8Downloader  | m3u8-downloader | 开源软件（国人开发） |  √   |
 |      Rubick      |     rubick      | 开源软件（国人开发） |  √   |
+|   Blender 镜像   |   blender-cn    |     开源软件镜像     |  √   |
 |  BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |  √   |
 |    IINA 镜像     |     iina-cn     |     开源软件镜像     |  √   |
 |    Julia 镜像    |    julia-cn     |     开源软件镜像     |  √   |
