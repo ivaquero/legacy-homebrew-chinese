@@ -1,5 +1,5 @@
 cask "eshelper" do
-  version "2022-10-04"
+  version "2022-10-15"
   sha256 "f475593a63754d226c31de44d38cb3be2e3307de25806c701e8f006712c47d7d"
 
   # static.frdic.com/ was verified as official when first introduced to the cask
