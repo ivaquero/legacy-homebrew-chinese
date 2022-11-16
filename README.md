@@ -1,3 +1,4 @@
+
 # Homebrew-Chinese
 
 [![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml) [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/license/homebrew-chinese.svg) [![code-size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg) [![repo-size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
@@ -16,14 +17,14 @@
 
 在终端中运行以下命令：
 
-```bash
+```sh
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap ivaquero/chinese
 ```
 
 国内源
 
-```bash
+```sh
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 brew tap ivaquero/chinese
 ```
@@ -36,7 +37,7 @@ brew tap ivaquero/chinese
 
 在终端中运行以下命令：
 
-```bash
+```sh
 brew tap ivaquero/chinese
 brew update
 ```
@@ -45,30 +46,29 @@ brew update
 
 - 通过 `brew search` 命令检查 App 的确切名称：
 
-```bash
+```sh
 brew search <app_name>
 ```
-
 ```markdown
 brew cask install <app_name>
 ```
 
 - For specific installation
 
-```bash
+```sh
 brew install chinese/<app_name>
 ```
 
 #### 推荐：添加官方仓库 🚀
 
-```bash
+```sh
 brew tap homebrew/homebrew-cask
 brew update
 ```
 
 #### 用于 Homebrew 命令 📖
 
-```bash
+```sh
 brew help
 ```
 
@@ -80,13 +80,14 @@ brew help
 |      Rubick      |     rubick      | 开源软件（国人开发） |  √   |
 |   Blender 镜像   |   blender-cn    |     开源软件镜像     |  √   |
 |  BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |  √   |
+|    GIMP 镜像     |     gimp-cn     |     开源软件镜像     |  √   |
 |    IINA 镜像     |     iina-cn     |     开源软件镜像     |  √   |
 |    Julia 镜像    |    julia-cn     |     开源软件镜像     |  √   |
 | LibreOffice 镜像 | libreoffice-cn  |     开源软件镜像     |  √   |
 |     Lyx 镜像     |     lyx-cn      |     开源软件镜像     |  √   |
 | Mambaforge 镜像  |  mambaforge-cn  |     开源软件镜像     |  √   |
 | OBS Studio 镜像  |     obs-cn      |     开源软件镜像     |  √   |
-| Qt Creator 镜像  |   qt-creator-cn    |     开源软件镜像     |  √   |
+| Qt Creator 镜像  |  qt-creator-cn  |     开源软件镜像     |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |     开源软件镜像     |  √   |
 |     VLC 镜像     |     vlc-cn      |     开源软件镜像     |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |     开源软件镜像     |  √   |
