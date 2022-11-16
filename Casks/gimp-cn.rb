@@ -2,7 +2,7 @@ cask "gimp-cn" do
   version "2.10.32"
   sha256 "e5547fc01168270bd1ba5380cff610966da229e44f311138f12168cb2f34d3c8"
 
-  url "https://mirrors.ustc.edu.cn/gimp/v2.10/macos/v#{version.major_minor}/osx/gimp-#{version}-x86_64.dmg"
+  url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/osx/gimp-#{version}-x86_64.dmg"
   name "GIMP"
   name "GNU Image Manipulation Program"
   desc "Free and open-source image editor"
