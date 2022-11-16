@@ -86,7 +86,7 @@ brew help
 |     Lyx 镜像     |     lyx-cn      |     开源软件镜像     |  √   |
 | Mambaforge 镜像  |  mambaforge-cn  |     开源软件镜像     |  √   |
 | OBS Studio 镜像  |     obs-cn      |     开源软件镜像     |  √   |
-| Qt Creator 镜像  |   qt-creator    |     开源软件镜像     |  √   |
+| Qt Creator 镜像  |   qt-creator-cn    |     开源软件镜像     |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |     开源软件镜像     |  √   |
 |     VLC 镜像     |     vlc-cn      |     开源软件镜像     |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |     开源软件镜像     |  √   |
