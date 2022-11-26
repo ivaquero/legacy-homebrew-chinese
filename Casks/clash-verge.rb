@@ -1,7 +1,7 @@
 cask "clash-verge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.1.2"
+  version "1.2.0"
   sha256 arm:   "83009f585572b76c7992c5a24180145ebd5aedf8793092de53b142306c39acf8",
          intel: "0e62740c3e64ddb920166018fc89f8fdd546bab8a4615b32f3bd3f9514976e5d"
 

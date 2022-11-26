@@ -8,27 +8,27 @@ on:
 #   # Allows you to run this workflow manually from the Actions tab
 #   workflow_dispatch:
 
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   job1:
-#     name: Test homebrew-chinese A-F
-#     runs-on: macos-11
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  job1:
+    name: Test homebrew-chinese A-F
+    runs-on: macos-11
 
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Set up Homebrew
-#         id: set-up-homebrew
-#         uses: Homebrew/actions/setup-homebrew@master
-#       - name: Test script
-#         run: |
-#           brew tap ivaquero/chinese
-#           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-#           brew install ripgrep sd
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
 
-#           for cask in Casks/[a-f]*.rb; do
-#               # echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew livecheck
-#               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-#           done
+          for cask in Casks/[a-f]*.rb; do
+              # echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew livecheck
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+          done
 
 #   job2:
 #     name: Test homebrew-chinese G-N
