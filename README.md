@@ -1,4 +1,3 @@
-
 # Homebrew-Chinese
 
 [![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml) [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/license/homebrew-chinese.svg) [![code-size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg) [![repo-size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
@@ -49,6 +48,7 @@ brew update
 ```sh
 brew search <app_name>
 ```
+
 ```markdown
 brew cask install <app_name>
 ```
@@ -86,6 +86,7 @@ brew help
 | LibreOffice 镜像 | libreoffice-cn  |     开源软件镜像     |  √   |
 |     Lyx 镜像     |     lyx-cn      |     开源软件镜像     |  √   |
 | Mambaforge 镜像  |  mambaforge-cn  |     开源软件镜像     |  √   |
+|  Miniforge 镜像  |  miniforge-cn   |     开源软件镜像     |  √   |
 | OBS Studio 镜像  |     obs-cn      |     开源软件镜像     |  √   |
 | Qt Creator 镜像  |  qt-creator-cn  |     开源软件镜像     |  √   |
 |  TeXStudio 镜像  |  texstudio-cn   |     开源软件镜像     |  √   |
