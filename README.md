@@ -82,6 +82,7 @@ brew help
 |  BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |  √   |
 |    GIMP 镜像     |     gimp-cn     |     开源软件镜像     |  √   |
 |    IINA 镜像     |     iina-cn     |     开源软件镜像     |  √   |
+|  Inkscape 镜像   |   inkscape-cn   |     开源软件镜像     |  √   |
 |    Julia 镜像    |    julia-cn     |     开源软件镜像     |  √   |
 | LibreOffice 镜像 | libreoffice-cn  |     开源软件镜像     |  √   |
 |     Lyx 镜像     |     lyx-cn      |     开源软件镜像     |  √   |
