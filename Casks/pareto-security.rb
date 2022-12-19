@@ -17,4 +17,6 @@
   depends_on macos: ">= :sierra"
 
   app "Pareto Security.app"
+
+  zap trash: []
 end
