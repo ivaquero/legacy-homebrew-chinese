@@ -7,7 +7,7 @@
 本仓库主要收录以下软件：
 
 - 开源软件的国内镜像
-- 国人开发的开源软件（主要服务于国人，未被 Homebrew 官方收录）
+- 国人开发的开源软件（面向国人，未被 Homebrew 官方收录）
 - 国产商业软件
 
 # 开始 🏃
@@ -74,10 +74,9 @@ brew help
 
 |      App 名      |     Cask 名     |         类型         | 原创 |
 | :--------------: | :-------------: | :------------------: | :--: |
-|       DVC        |       dvc       |       开源软件       |  √   |
+|       DVC        |     dvc-app     |       开源软件       |  √   |
 |   Clash-Verge    |   clash-verge   | 开源软件（国人开发） |  √   |
 |  M3U8Downloader  | m3u8-downloader | 开源软件（国人开发） |  √   |
-|      Rubick      |     rubick      | 开源软件（国人开发） |  √   |
 |   Blender 镜像   |   blender-cn    |     开源软件镜像     |  √   |
 |  BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |  √   |
 |    GIMP 镜像     |     gimp-cn     |     开源软件镜像     |  √   |
