@@ -75,6 +75,7 @@ brew help
 |      App 名      |     Cask 名     |         类型         | 原创 |
 | :--------------: | :-------------: | :------------------: | :--: |
 |       DVC        |     dvc-app     |       开源软件       |  √   |
+|  HasleoNTFS4Mac  |   hasleo-ntfs   |       免费软件       |  √   |
 |   Clash-Verge    |   clash-verge   | 开源软件（国人开发） |  √   |
 |  M3U8Downloader  | m3u8-downloader | 开源软件（国人开发） |  √   |
 |   Blender 镜像   |   blender-cn    |     开源软件镜像     |  √   |
