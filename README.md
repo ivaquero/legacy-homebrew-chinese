@@ -92,7 +92,6 @@ brew help
 |  TeXStudio 镜像  |  texstudio-cn   |     开源软件镜像     |  √   |
 |     VLC 镜像     |     vlc-cn      |     开源软件镜像     |  √   |
 |  VSCodium 镜像   |   vscodium-cn   |     开源软件镜像     |  √   |
-|    WPS Office    |  wpsoffice-cn   |       国产软件       |  √   |
 |     西语助手     |    eshelper     |     国产商业软件     |  √   |
 |   每日法语听力   |     ting-fr     |     国产商业软件     |  √   |
 |   每日英语听力   |     ting-en     |     国产商业软件     |  √   |
