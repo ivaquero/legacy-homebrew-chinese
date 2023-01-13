@@ -3,7 +3,7 @@ cask "lyx-cn" do
 
   on_monterey :or_older do
     sha256 "aaaaa005c5ec4bf574534de31cbd93ab4908dfa655da7535044185874a285c52"
-    url "https://mirrors.bfsu.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-12-x86_64-cocoa.dmg",
+    url "https://mirrors.bfsu.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-cocoa.dmg",
         verified: "mirrors.bfsu.edu.cn/lyx/"
   end
   on_ventura :or_newer do
