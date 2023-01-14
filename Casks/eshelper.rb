@@ -1,8 +1,8 @@
 cask "eshelper" do
-  version "2022-12-12"
+  version "4.2.9,1081"
   sha256 "a20ad097768b15ce09fe3235d2b7c6e9e04567fe104e7ad23e6268c1c96845ed"
 
-  url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version}",
+  url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version.csv.second}",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "Eshelper"
@@ -11,8 +11,8 @@ cask "eshelper" do
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
   livecheck do
-    url "http://www.francochinois.com/v4/es/app/download"
-    regex(/href=.*?dmg\?v=(\d+(?:-\d+)*)/i)
+    url "https://www.eudic.net/update/eshelper_mac.xml"
+    strategy :sparkle
   end
 
   app "Eudic_es.app"
