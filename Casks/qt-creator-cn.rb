@@ -1,9 +1,8 @@
 cask "qt-creator-cn" do
-  version "8.0.2"
-  sha256 "da57f709e34ac7eb1281ed2db74eebc29364eb5f9125d3374b1a08572925d254"
+  version "9.0.1"
+  sha256 "f0cb56fd6686ce79b13c1d2a218bae1a27095ab781977d13f8fad8313780041a"
 
-  url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg",
-      verified: "mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/"
+  url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg"
   name "Qt Creator"
   desc "IDE for application development"
   homepage "https://www.qt.io/developers/"
