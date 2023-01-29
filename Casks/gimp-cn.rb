@@ -16,6 +16,7 @@ cask "gimp-cn" do
     regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg}i)
   end
 
+  auto_updates true
   conflicts_with cask: ["gimp", "homebrew/cask-versions/gimp-dev"]
 
   app "GIMP.app"
