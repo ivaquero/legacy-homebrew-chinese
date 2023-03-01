@@ -5,7 +5,7 @@ cask "gimp-cn" do
   sha256 arm:   "5561a571fe8dfa176ca526939288322abfa4b5b084eda03013355313350aaf47",
          intel: "6d228b36eaa70be9dff81b37c3561dce2a62ff8c6fd55f6fc982457768e691da"
 
-  url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/macox/gimp-#{version}-#{arch}.dmg"
+  url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/osx/gimp-#{version}-#{arch}.dmg"
   name "GIMP development version"
   desc "Free and open-source image editor"
   homepage "https://www.gimp.org/"
