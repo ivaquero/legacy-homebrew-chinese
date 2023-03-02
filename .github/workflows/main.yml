@@ -73,10 +73,26 @@ jobs:
 
   job2:
     name: Test homebrew-chinese Formulae
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-20.04, macos-11]
+    runs-on: macos-11
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
+
+          for form in Formula/*.rb; do
+              echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
+          done
+
+  job3:
+    name: Test homebrew-chinese Formulae
+    runs-on: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v3
