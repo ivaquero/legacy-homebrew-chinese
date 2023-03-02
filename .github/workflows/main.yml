@@ -30,26 +30,26 @@ jobs:
               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
 
-#   job2:
-#     name: Test homebrew-chinese G-N
-#     runs-on: macos-11
+  job2:
+    name: Test homebrew-chinese G-N
+    runs-on: macos-11
 
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Set up Homebrew
-#         id: set-up-homebrew
-#         uses: Homebrew/actions/setup-homebrew@master
-#       - name: Test script
-#         run: |
-#           brew tap ivaquero/chinese
-#           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-#           brew install ripgrep sd
-#           brew uninstall julia
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/chinese
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          brew install ripgrep sd
+          brew uninstall julia
 
-#           for cask in Casks/[g-n]*.rb; do
-#               # echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew livecheck
-#               echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-#           done
+          for cask in Casks/[g-n]*.rb; do
+              # echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew livecheck
+              echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
+          done
 
 #   job3:
 #     name: Test homebrew-chinese O-T
