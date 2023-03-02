@@ -19,7 +19,7 @@ class Musicplayer < Formula
     end
   else
     url "https://github.com/tsirysndr/music-player/releases/download/v0.2.0-alpha.10/music-player_v0.2.0-alpha.10_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "63377997ab8af0cb8c2b60b59b42c2c5539fe08cb9f985325fc058730da509dc"
+    sha256 "87ad6fdcc0281cbf7936d826b20a8ce42ad894ef3739b5df2ca6bcc20ec7a120"
   end
 
   def install
