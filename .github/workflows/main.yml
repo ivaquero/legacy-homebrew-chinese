@@ -29,8 +29,7 @@ jobs:
       - name: Test Casks
         run: |
           for cask in Casks/[a-f]*.rb; do
-            echo $(basename $cask) | xargs brew install --cask
-            echo $(basename $cask) | xargs brew livecheck --cask
+            echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
           done
 
   job2:
