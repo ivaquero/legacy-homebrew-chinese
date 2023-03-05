@@ -33,7 +33,7 @@ jobs:
           done
 
   job2:
-    name: Test Formulae
+    name: Test Formulae on macOS
     runs-on: macos-11
 
     steps:
@@ -58,7 +58,7 @@ jobs:
           done
 
   job3:
-    name: Test homebrew-chinese Formulae
+    name: Test Formulae on Linux
     runs-on: ubuntu-20.04
 
     steps:
