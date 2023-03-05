@@ -1,5 +1,5 @@
 cask "chatgpt" do
-  arch arm: "aarch64", intel: "x64"
+  arch arm: "aarch64", intel: "x86_64"
 
   version "0.12.0"
   sha256 arm:   "c4c10eeb4a2c9a885da13047340372f461d411711c20472fc673fbf958bf6378",
