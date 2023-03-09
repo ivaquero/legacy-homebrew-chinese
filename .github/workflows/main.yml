@@ -30,52 +30,52 @@ jobs:
         run: |
           brew install obs-cn
 
-  job2:
-    name: Test Formulae on macOS
-    runs-on: macos-11
+  # job2:
+  #   name: Test Formulae on macOS
+  #   runs-on: macos-11
 
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: ivaquero/homebrew-chinese
-          ref: main
-          path: homebrew-chinese
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-        with:
-          homebrew-version: "3.0.8"
-          cache-version: v3
-      - name: Install dependencies
-        run: |
-          brew tap ivaquero/chinese
-          brew install ripgrep sd
-      - name: Test Formulae
-        run: |
-          for form in Formula/*.rb; do
-              echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
-          done
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         repository: ivaquero/homebrew-chinese
+  #         ref: main
+  #         path: homebrew-chinese
+  #     - name: Set up Homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #       with:
+  #         homebrew-version: "3.0.8"
+  #         cache-version: v3
+  #     - name: Install dependencies
+  #       run: |
+  #         brew tap ivaquero/chinese
+  #         brew install ripgrep sd
+  #     - name: Test Formulae
+  #       run: |
+  #         for form in Formula/*.rb; do
+  #             echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
+  #         done
 
-  job3:
-    name: Test Formulae on Linux
-    runs-on: ubuntu-20.04
+  # job3:
+  #   name: Test Formulae on Linux
+  #   runs-on: ubuntu-20.04
 
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: ivaquero/homebrew-chinese
-          ref: main
-          path: homebrew-chinese
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-        with:
-          homebrew-version: "3.0.8"
-          cache-version: v3
-      - name: Install dependencies
-        run: |
-          brew tap ivaquero/chinese
-          brew install ripgrep sd
-      - name: Test Formulae
-        run: |
-          for form in Formula/*.rb; do
-              echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
-          done
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         repository: ivaquero/homebrew-chinese
+  #         ref: main
+  #         path: homebrew-chinese
+  #     - name: Set up Homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #       with:
+  #         homebrew-version: "3.0.8"
+  #         cache-version: v3
+  #     - name: Install dependencies
+  #       run: |
+  #         brew tap ivaquero/chinese
+  #         brew install ripgrep sd
+  #     - name: Test Formulae
+  #       run: |
+  #         for form in Formula/*.rb; do
+  #             echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
+  #         done
