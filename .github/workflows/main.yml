@@ -25,12 +25,10 @@ jobs:
       - name: Install dependencies
         run: |
           brew tap ivaquero/chinese
-          brew install ripgrep sd
+          # brew install ripgrep sd
       - name: Test Casks
         run: |
-          for cask in Casks/[a-f]*.rb; do
-            echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew install
-          done
+          brew install openai-translator
 
   job2:
     name: Test Formulae on macOS
