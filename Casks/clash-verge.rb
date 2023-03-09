@@ -7,7 +7,7 @@ cask "clash-verge" do
 
   url "https://github.com/zzzgydi/clash-verge/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
   name "Clash for Windows"
-  desc "Cross-Platform Clash GUI based on tauri"
+  desc "Cross-Platform Clash GUI based on Tauri"
   homepage "https://github.com/zzzgydi/clash-verge"
 
   livecheck do
