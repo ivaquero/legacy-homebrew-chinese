@@ -28,7 +28,7 @@ jobs:
           # brew install ripgrep sd
       - name: Test Casks
         run: |
-          brew install openai-translator
+          brew install obs-cn
 
   job2:
     name: Test Formulae on macOS
