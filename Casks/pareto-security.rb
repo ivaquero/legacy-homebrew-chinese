@@ -18,5 +18,7 @@
 
   app "Pareto Security.app"
 
-  zap trash: []
+  zap trash: [
+    "~/Library/HTTPStorages/niteo.co.Pareto",
+  ]
 end
