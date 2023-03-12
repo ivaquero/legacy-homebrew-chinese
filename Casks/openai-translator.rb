@@ -1,6 +1,6 @@
 cask "openai-translator" do
   version "0.0.18"
-  sha256 "40616fdd8c05eabea051b03de053fd20874cee700ff8466f6e6cd796057d89c1"
+  sha256 "c0e499d3d4e825a865aa8a505d77c306e1bba227d189596ed8657d6dbb476b11"
 
   url "https://github.com/yetone/openai-translator/releases/download/v#{version}/OpenAI.Translator_#{version}_universal.dmg"
 
