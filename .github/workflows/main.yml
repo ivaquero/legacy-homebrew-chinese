@@ -31,7 +31,7 @@ jobs:
           brew tap ivaquero/chinese
       - name: Test Casks
         run: |
-          brew install amazon-corretto-8 chatgpt clash-verge dvc-app eshelper
+          brew install amazon-corretto-8 chatgpt clash-verge dvc-app
 
   job2:
     name: Test Casks H-T
@@ -57,7 +57,7 @@ jobs:
           brew tap ivaquero/chinese
       - name: Test Casks
         run: |
-          brew install i4tools openai-translator peazip ting-en ting-es ting-fr
+          brew install i4tools openai-translator ting-en ting-es ting-fr
 
   # job2:
   #   name: Test Formulae on macOS
