@@ -1,5 +1,5 @@
 cask "openai-translator" do
-  arch arm: "aarch64", intel: "universal"
+  arch arm: "aarch64", intel: "x64"
 
   version "0.0.26"
   sha256 arm:   "1dccf520d807e2eb6510e5c0f33f8d2dd11381143ea4b1ef5c0230d371c6dcd4",

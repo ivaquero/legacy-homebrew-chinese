@@ -12,6 +12,7 @@ cask "hasleo-ntfs" do
     regex(/href=.*?Version\s(\d+(?:\.\d+)*)/i)
   end
 
+  auto_updates true
   depends_on macos: ">= :mojave"
 
   pkg "HasleoNTFS4Mac.pkg"
