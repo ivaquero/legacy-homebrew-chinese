@@ -8,7 +8,7 @@ on:
 
 jobs:
   job1:
-    name: Test Casks A-F
+    name: Test Casks A-G
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -29,10 +29,35 @@ jobs:
       - name: Install dependencies
         run: |
           brew tap ivaquero/chinese
-          # brew install ripgrep sd
       - name: Test Casks
         run: |
-          brew install openai-translator
+          brew install amazon-corretto-8 chatgpt clash-verge dvc-app
+
+  job2:
+    name: Test Casks H-T
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, macos-11]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: ivaquero/homebrew-chinese
+          ref: main
+          path: homebrew-chinese
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          homebrew-version: "3.0.8"
+          cache-version: v3
+      - name: Install dependencies
+        run: |
+          brew tap ivaquero/chinese
+      - name: Test Casks
+        run: |
+          brew install i4tools openai-translator ting-en ting-es ting-fr
 
   # job2:
   #   name: Test Formulae on macOS
