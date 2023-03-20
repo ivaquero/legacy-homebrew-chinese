@@ -75,6 +75,7 @@ brew help
 |      App 名       |     Cask 名     |         类型         | 原创  |
 | :---------------: | :-------------: | :------------------: | :---: |
 |        DVC        |     dvc-app     |       开源软件       |   √   |
+|      Chatbox      |     chatbox     | 开源软件（国人开发） |   √   |
 |      ChatGPT      |     chatgpt     | 开源软件（国人开发） |   √   |
 |    Clash-Verge    |   clash-verge   | 开源软件（国人开发） |   √   |
 | OpenAI-Translator |   clash-verge   | 开源软件（国人开发） |   √   |
