@@ -1,8 +1,8 @@
 cask "openai-translator" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.0.26"
-  sha256 arm:   "1dccf520d807e2eb6510e5c0f33f8d2dd11381143ea4b1ef5c0230d371c6dcd4",
+  version "0.0.31"
+  sha256 arm:   "7477ce162f266e48d5ac512bbb02ae9791d0f24b790d103981566c86a65ca826",
          intel: "2c4c058f7c85b5bbf9324e46fac4dd8134687a824afb0139a8a64f06b4a8549a"
 
   url "https://github.com/yetone/openai-translator/releases/download/v#{version}/OpenAI.Translator_#{version}_#{arch}.dmg"
