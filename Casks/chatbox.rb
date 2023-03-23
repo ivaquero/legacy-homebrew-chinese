@@ -1,9 +1,9 @@
 cask "chatbox" do
   arch arm: "x64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "c5b481a3f3262670d5fce7ebe4f6a654c425ba0ef51ebf79181b78709ff376eb",
-         intel: "c5b481a3f3262670d5fce7ebe4f6a654c425ba0ef51ebf79181b78709ff376eb"
+  version "0.2.3"
+  sha256 arm:   "448df09d54aef3e38df351fe24c4466ebb6b66ebc2721ea1d736bbc01e4b560f",
+         intel: "448df09d54aef3e38df351fe24c4466ebb6b66ebc2721ea1d736bbc01e4b560f"
 
   url "https://github.com/Bin-Huang/chatbox/releases/download/Chatbox-v#{version}/chatbox_#{version}_#{arch}.dmg"
   name "Chatbox"
@@ -17,5 +17,7 @@ cask "chatbox" do
 
   app "Chatbox.app"
 
-  zap trash: []
+  zap trash: [
+    "~/Library/Application\ Support/xyz.chatboxapp.app"
+  ]
 end
