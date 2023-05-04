@@ -81,6 +81,7 @@ brew help
 | OpenAI-Translator |   clash-verge   | 开源软件（国人开发） |   √   |
 |  M3U8Downloader   | m3u8-downloader | 开源软件（国人开发） |   √   |
 |   Blender 镜像    |   blender-cn    |     开源软件镜像     |   √   |
+|   FreeCAD 镜像    |   freecad-cn    |     开源软件镜像     |   √   |
 |   BasicTeX 镜像   |   basictex-cn   |     开源软件镜像     |   √   |
 |     GIMP 镜像     |     gimp-cn     |     开源软件镜像     |   √   |
 |     IINA 镜像     |     iina-cn     |     开源软件镜像     |   √   |
