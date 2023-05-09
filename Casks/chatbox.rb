@@ -18,6 +18,7 @@ cask "chatbox" do
   app "Chatbox.app"
 
   zap trash: [
-    "~/Library/Application\ Support/xyz.chatboxapp.app"
+    "~/Library/Application Support/xyz.chatboxapp.app",
+    "~/Library/Saved Application State/xyz.chatboxapp.app.savedState"
   ]
 end
