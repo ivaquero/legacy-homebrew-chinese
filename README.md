@@ -75,7 +75,7 @@ brew help
 |      App 名       |     Cask 名     |         类型         | 原创  |
 | :---------------: | :-------------: | :------------------: | :---: |
 |        DVC        |     dvc-app     |       开源软件       |   √   |
-|      Chatbox      |     chatbox     | 开源软件（国人开发） |   √   |
+|      ChatBox      |     chatbox     | 开源软件（国人开发） |   √   |
 |      ChatGPT      |     chatgpt     | 开源软件（国人开发） |   √   |
 |    Clash-Verge    |   clash-verge   | 开源软件（国人开发） |   √   |
 | OpenAI-Translator |   clash-verge   | 开源软件（国人开发） |   √   |
@@ -100,5 +100,6 @@ brew help
 |   每日法语听力    |     ting-fr     |     国产商业软件     |   √   |
 |   每日英语听力    |     ting-en     |     国产商业软件     |   √   |
 |   每日西语听力    |     ting-es     |     国产商业软件     |   √   |
+|      HapiGo       |     hapogo      |     国产商业软件     |   √   |
 |     爱斯助手      |     i4tools     |     国产商业软件     |   √   |
 |    亿图图示 9     |    edrawmax     |     国产商业软件     |   √   |
