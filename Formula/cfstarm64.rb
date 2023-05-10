@@ -1,4 +1,4 @@
-class Cfstarm64 < Formula
+class Cloudflarespeedtestarm64 < Formula
   desc "Select the best IP for your Mac on Cloudflare CDN"
   homepage "https://github.com/XIU2/CloudflareSpeedTest"
   url "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.2.3/CloudflareST_darwin_arm64.zip"
