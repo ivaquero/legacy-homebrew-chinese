@@ -16,6 +16,7 @@ cask "hapigo" do
   app "HapiGo.app"
 
   zap trash: [
-    "~/Library/Application Support/Hapigo/"
+    "~/Library/Application Support/Hapigo/",
+    "~/Library/Caches/Hapigo/",
   ]
 end
