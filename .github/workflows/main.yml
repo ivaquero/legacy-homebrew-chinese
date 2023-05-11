@@ -81,7 +81,7 @@ jobs:
           brew install ripgrep sd
       - name: Test Formulae
         run: |
-          brew install vtm
+          brew install cloudflare-st
 
   # job4:
   #   name: Test Formulae on Linux
