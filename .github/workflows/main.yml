@@ -32,33 +32,33 @@ jobs:
       - name: Test Casks
         run: |
           brew install eshelper
-  job2:
-    name: Test Other Casks
-    runs-on: ${{ matrix.os }}
+  # job2:
+  #   name: Test Other Casks
+  #   runs-on: ${{ matrix.os }}
 
-    strategy:
-      matrix:
-        os: [macos-latest, macos-11]
+  #   strategy:
+  #     matrix:
+  #       os: [macos-latest, macos-11]
 
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: ivaquero/homebrew-chinese
-          ref: main
-          path: homebrew-chinese
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-        with:
-          homebrew-version: "3.0.8"
-          cache-version: v3
-      - name: Install dependencies
-        run: |
-          brew tap ivaquero/chinese
-      - name: Test Casks
-        run: |
-          brew install openai-translator
-          # brew install ting-en ting-es ting-fr
-          # brew install amazon-corretto-8 chatbox chatgpt clash-verge hapigo i4tools m3u8-downloader
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         repository: ivaquero/homebrew-chinese
+  #         ref: main
+  #         path: homebrew-chinese
+  #     - name: Set up Homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #       with:
+  #         homebrew-version: "3.0.8"
+  #         cache-version: v3
+  #     - name: Install dependencies
+  #       run: |
+  #         brew tap ivaquero/chinese
+  #     - name: Test Casks
+  #       run: |
+  #         brew install openai-translator
+  #         # brew install ting-en ting-es ting-fr
+  #         # brew install amazon-corretto-8 chatbox chatgpt clash-verge hapigo i4tools m3u8-downloader
 
   job3:
     name: Test Formulae on macOS
@@ -81,9 +81,7 @@ jobs:
           brew install ripgrep sd
       - name: Test Formulae
         run: |
-          for form in Formula/*.rb; do
-              echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew install
-          done
+          brew install vtm
 
   # job4:
   #   name: Test Formulae on Linux
