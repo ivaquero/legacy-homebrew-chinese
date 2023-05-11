@@ -18,8 +18,6 @@ class Cloudflarespeedtest < Formula
     bin.install "ipv6.txt"
     bin.install "ip.txt"
     bin.install "cfst_hosts.sh"
-    bin.install "注意 2.1.0 版本移除了 -ipv6 参数.txt"
-    bin.install "使用+错误+反馈说明.txt"
   end
 
   def caveats
