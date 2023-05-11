@@ -15,6 +15,7 @@ cask "eshelper" do
     strategy :sparkle
   end
 
+  auto_updates true
   app "Eudic_es.app"
 
   uninstall quit: [

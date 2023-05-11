@@ -14,6 +14,7 @@ cask "ting-en" do
     regex(/href=.*?dmg\?ver=(\d+(?:-\d+)*)/i)
   end
 
+  auto_updates true
   depends_on macos: ">= :sierra"
 
   app "每日英语听力.app"
