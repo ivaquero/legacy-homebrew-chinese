@@ -10,9 +10,9 @@
 - 国人开发的开源软件（面向国人，未被 Homebrew 官方收录）
 - 国产商业软件
 
-# 开始 🏃
+## 开始 🏃
 
-## 安装 Homebrew 🍺 🚴
+### 安装 Homebrew 🍺 🚴
 
 在终端中运行以下命令：
 
@@ -30,9 +30,9 @@ brew tap ivaquero/chinese
 
 更多相关信息，请访问 Homebrew 官方网站 👉 https://brew.sh/ 👈
 
-## 从本仓库安装应用程序 🚅
+### 从本仓库安装应用程序 🚅
 
-### 第 1 步：添加此仓库并进行更新，么么哒~ 💋
+- 第 1 步：添加此仓库并进行更新，么么哒~ 💋
 
 在终端中运行以下命令：
 
@@ -41,7 +41,7 @@ brew tap ivaquero/chinese
 brew update
 ```
 
-### 步骤 2：安装应用程序 ✈️
+- 步骤 2：安装应用程序 ✈️
 
 - 通过 `brew search` 命令检查 App 的确切名称：
 
@@ -59,22 +59,27 @@ brew cask install <app_name>
 brew install chinese/<app_name>
 ```
 
-#### 推荐：添加官方仓库 🚀
+### 其他
+
+- 推荐：添加官方仓库 🚀
 
 ```sh
 brew tap homebrew/homebrew-cask
 brew update
 ```
 
-#### 用于 Homebrew 命令 📖
+- 用于 Homebrew 命令 📖
 
 ```sh
 brew help
 ```
 
+## 总结
+
+### GUI 软件
+
 |      App 名       |     Cask 名     |         类型         | 原创  |
 | :---------------: | :-------------: | :------------------: | :---: |
-|        DVC        |     dvc-app     |       开源软件       |   √   |
 |      ChatBox      |     chatbox     | 开源软件（国人开发） |   √   |
 |      ChatGPT      |     chatgpt     | 开源软件（国人开发） |   √   |
 |    Clash-Verge    |   clash-verge   | 开源软件（国人开发） |   √   |
@@ -103,3 +108,11 @@ brew help
 |      HapiGo       |     hapogo      |     国产商业软件     |   √   |
 |     爱斯助手      |     i4tools     |     国产商业软件     |   √   |
 |    亿图图示 9     |    edrawmax     |     国产商业软件     |   √   |
+
+### CLI 软件
+
+|      名      |   CLI 名    |   类型   | 原创  |
+| :----------: | :---------: | :------: | :---: |
+| music player | musicplayer | 开源软件 |   √   |
+|  musikcube   |  musikcube  | 开源软件 |   √   |
+|     VTM      |     vtm     | 开源软件 |   √   |
