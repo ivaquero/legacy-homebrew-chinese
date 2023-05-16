@@ -3,7 +3,7 @@ cask "pot-desktop" do
 
     version "0.3.2"
     sha256 arm:   "3e8e725d58ed1a3876ee20c943ff0cd49e1a38ee60a344127fae8e92220d71fa",
-           intel: "3a84f6280fda24de1f2dea798fcad4062b1e32ef5161ace5fcaca4d20b03f9ee"
+           intel: "17eb4113ca7293b12880afb30de4fd6c9801282f66c7ba885afb7e8f02167892"
 
     url "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
     name "pot"
