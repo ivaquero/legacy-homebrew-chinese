@@ -18,5 +18,6 @@ cask "hapigo" do
   zap trash: [
     "~/Library/Application Support/Hapigo/",
     "~/Library/Caches/Hapigo/",
+    "~/Library/Preferences/com.xunyong.hapigo",
   ]
 end
