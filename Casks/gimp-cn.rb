@@ -11,9 +11,8 @@ cask "gimp-cn" do
   homepage "https://www.gimp.org/"
 
   livecheck do
-    url "https://www.gimp.org/downloads/devel/"
-    strategy :page_match
-    regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg}i)
+    url "https://www.gimp.org/downloads/"
+    regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+(-\d)?)[._-]#{arch}\.dmg}i)
   end
 
   auto_updates true

@@ -13,8 +13,8 @@ cask "mambaforge-cn" do
 
   livecheck do
     url :url
+    regex(/v?(\d+(?:[._-]\d+)+)/i)
     strategy :github_latest
-    regex(%r{href=.*?/tag/v?(\d+(?:[._-]\d+)+)["' >]}i)
   end
 
   auto_updates true

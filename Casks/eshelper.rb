@@ -1,6 +1,6 @@
 cask "eshelper" do
-  version "4.3.0,1082"
-  sha256 "01fa229f29d1235ba3ebf3b0e964d687020b46327986fea65e3bd748e6da1047"
+  version "4.3.9,1096"
+  sha256 "3f5b582e7b94342be69b7e73fb47b829d4f871b49456224e74e0847e4d81e59e"
 
   url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version.csv.second}",
       verified:   "static.frdic.com/",
@@ -15,6 +15,7 @@ cask "eshelper" do
     strategy :sparkle
   end
 
+  auto_updates true
   app "Eudic_es.app"
 
   uninstall quit: [
