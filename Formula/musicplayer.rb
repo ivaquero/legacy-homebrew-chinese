@@ -11,15 +11,15 @@ class Musicplayer < Formula
   arch = Hardware::CPU.arm? ? "aarch64" : "x86_64"
 
   if OS.mac?
-    url "https://github.com/tsirysndr/music-player/releases/download/v0.2.0-alpha.10/music-player_v0.2.0-alpha.10_#{arch}-apple-darwin.tar.gz"
+    url "https://github.com/tsirysndr/music-player/releases/download/v0.2.0-alpha.12/music-player_v0.2.0-alpha.12_#{arch}-apple-darwin.tar.gz"
     if Hardware::CPU.intel?
-      sha256 "2db0705db4a1905d95dfbaf01a656b0ebbdf4c663ebc0f97eb4b329f246ba1d5"
+      sha256 "d3c405a8dbc2b1890d1de9b723a315d0adecedc75d993d623935fca058a77bff"
     else
-      sha256 "6baaea9b96e2330771b8acc67fc9ee0e2f22263099a31ca6cded00547ee94fb0"
+      sha256 "29c77237cd6f664b5a1cafce0d165e80c65d06d68c8727ddf5ef76b14dde975f"
     end
   else
-    url "https://github.com/tsirysndr/music-player/releases/download/v0.2.0-alpha.10/music-player_v0.2.0-alpha.10_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "87ad6fdcc0281cbf7936d826b20a8ce42ad894ef3739b5df2ca6bcc20ec7a120"
+    url "https://github.com/tsirysndr/music-player/releases/download/v0.2.0-alpha.12/music-player_v0.2.0-alpha.12_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "2c4c1eec31ed53fc6e9ec6e598f89173fc2d1adaf323b9c1f77be5be3e9cee6f"
   end
 
   def install

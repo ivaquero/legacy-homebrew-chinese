@@ -116,5 +116,4 @@ brew help
 |      名      |   CLI 名    |   类型   | 原创  |
 | :----------: | :---------: | :------: | :---: |
 | music player | musicplayer | 开源软件 |   √   |
-|  musikcube   |  musikcube  | 开源软件 |   √   |
 |     VTM      |     vtm     | 开源软件 |   √   |

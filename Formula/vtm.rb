@@ -10,7 +10,7 @@ class Vtm < Formula
 
   if OS.mac?
     url "https://github.com/netxs-group/vtm/releases/download/v0.9.9l/vtm_macos_any.tar.gz"
-    sha256 "52e073854581def1acf722ba38c5d5aa17c523944241a7d90a33d2c7a0bf7e73"
+    sha256 "1663bee2908add838bf20876ef9388fc5dcd2e9ff8349f3c127ba70d7678e3c3"
   else
     url "https://github.com/netxs-group/vtm/releases/download/v0.9.9l/vtm_linux_amd64.tar.gz"
     sha256 "87ad6fdcc0281cbf7936d826b20a8ce42ad894ef3739b5df2ca6bcc20ec7a120"
