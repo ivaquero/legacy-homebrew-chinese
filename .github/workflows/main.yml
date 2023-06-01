@@ -29,9 +29,9 @@ jobs:
       - name: Install dependencies
         run: |
           brew tap ivaquero/chinese
-      - name: Test Casks
+      - name: Test
         run: |
-          brew install eshelper
+          brew install vtm
   # job2:
   #   name: Test Other Casks
   #   runs-on: ${{ matrix.os }}
