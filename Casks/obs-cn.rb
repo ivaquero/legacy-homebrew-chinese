@@ -1,9 +1,9 @@
 cask "obs-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "29.1.1"
-  sha256 arm:   "d10fbd16e35343c363a4efac5c1dea4c54293f19ee4662c5b017ffd11fd7301f",
-         intel: "300d3bb9da40ecd8496d2c971b8c197ea67d582fdfb821267d93332e06e77f64"
+  version "29.1.2"
+  sha256 arm:   "da1e122dc21886f960923ce104083941e4ad15f73fa96c62e030efbff0655752",
+         intel: "a4445ff0fad6e814f8a616b5dd807186392cc18b94e5d29ac27836f04ee761c7"
 
   url "https://mirrors.bfsu.edu.cn/github-release/obsproject/obs-studio/LatestRelease/obs-studio-#{version}-macos-#{arch}.dmg",
       verified: "mirrors.bfsu.edu.cn/"
@@ -12,15 +12,25 @@ cask "obs-cn" do
   homepage "https://obsproject.com/"
 
   livecheck do
-    url "https://obsproject.com/download/"
-    regex(%r{href=.*?/obs[._-]studio[._-]v?(\d+(?:\.\d+)+).*?\.dmg}i)
+    url "https://obsproject.com/osx_update/stable/updates_#{arch}.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
   conflicts_with cask: ["homebrew/cask-versions/obs-beta", "obs"]
   depends_on macos: ">= :catalina"
 
-  app "OBS.app"
+   app "OBS.app"
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+  shimscript = "#{staged_path}/obs.wrapper.sh"
+  binary shimscript, target: "obs"
+
+  preflight do
+    File.write shimscript, <<~EOS
+      #!/bin/bash
+      exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
+    EOS
+  end
 
   uninstall delete: "/Library/CoreMediaIO/Plug-Ins/DAL/obs-mac-virtualcam.plugin"
 
