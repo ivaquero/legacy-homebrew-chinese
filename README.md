@@ -109,6 +109,7 @@ brew help
 |   每日西语听力    |      ting-es      |     国产商业软件     |   √   |
 |      HapiGo       |      hapogo       |     国产商业软件     |   √   |
 |     爱斯助手      |      i4tools      |     国产商业软件     |   √   |
+|      易有云       |     linkease      |     国产商业软件     |   √   |
 |    亿图图示 9     |     edrawmax      |     国产商业软件     |   √   |
 
 ### CLI 软件

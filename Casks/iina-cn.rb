@@ -9,7 +9,7 @@ cask "iina-cn" do
   homepage "https://iina.io/"
 
   livecheck do
-    url :url
+    url "https://github.com/iina/iina/"
     strategy :github_latest
   end
 

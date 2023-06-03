@@ -13,7 +13,7 @@ cask "texstudio-cn" do
   depends_on macos: ">= :big_sur"
 
   livecheck do
-    url :url
+    url "https://github.com/texstudio-org/texstudio/"
     strategy :github_latest
   end
 
