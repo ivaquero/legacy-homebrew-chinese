@@ -15,9 +15,9 @@ cask "alist-desktop" do
   app "alist-desktop.app"
 
   zap trash: [
-    "~/Library/Application Support/ci.nn.alist/",
-    "~/Library/Caches/ci.nn.alist/",
-    "~/Library/Saved Application State/ci.nn.alist.savedState/",
+    "~/Library/Application Support/ci.nn.alist",
+    "~/Library/Caches/ci.nn.alist",
+    "~/Library/Saved Application State/ci.nn.alist.savedState",
+    "~/Library/Webkit/ci.nn.alist",
   ]
-
 end

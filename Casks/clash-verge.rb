@@ -19,6 +19,7 @@ cask "clash-verge" do
 
   zap trash: [
     "~/.config/clash-verge",
+    "~/Library/Caches/top.gydi.clashverge",
     "~/Library/Preferences/top.gydi.clashverge.plist",
     "~/Library/Saved Application State/top.gydi.clashverge.savedState",
   ]
