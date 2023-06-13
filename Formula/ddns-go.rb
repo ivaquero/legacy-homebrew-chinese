@@ -1,7 +1,7 @@
 class DdnsGo < Formula
   desc "Simple and easy-to-use DDNS"
   homepage "https://github.com/jeessy2/ddns-go"
-  version "5.3.3"
+  version "5.3.4"
   license "MIT"
   version_scheme 1
 
@@ -14,14 +14,9 @@ class DdnsGo < Formula
 
   if OS.mac?
     url "https://github.com/jeessy2/ddns-go/releases/download/v#{version}/ddns-go_#{version}_darwin_#{arch}.tar.gz"
-    if Hardware::CPU.intel?
-      sha256 "49cec23312bf14a49a8e5c40636d5def8373c9dbab7cf71f16d25e7555adab66"
-    else
-      sha256 "1645ee5a0c2b9ac756eb74155cee91e97fc7ab2d9305f49df792523d3d0a78cb"
-    end
   else
-    url "https://github.com/jeessy2/ddns-go/releases/download/v5.3.3/ddns-go_5.3.3_linux_x86_64.tar.gz"
-    sha256 "56f8365223e5af07900dc3e8c27144640aa4724c44b089486ba103e778f535f5"
+    url "https://github.com/jeessy2/ddns-go/releases/download/v5.3.4/ddns-go_5.3.4_linux_x86_64.tar.gz"
+    sha256 "f8b626bdbff4cffcc2db1627ff5f9f6709afb1a599efa0b27f5f5b8d5d14095d"
   end
 
   def install
