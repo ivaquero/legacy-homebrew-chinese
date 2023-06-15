@@ -5,7 +5,7 @@ cask "yank-note" do
     sha256 arm:   "d9cd54be5ba48f0ff8a6c96735230f43ef95709b3a6f704e7a1c1fd75f44283a",
            intel: "e7196d549b965cf58bc52c7c509b42eeea6229ad0377ecccdf06ad96a357907a"
   
-    url "  https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
+    url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
     name "Yank Note"
     desc "A highly extensible Markdown editor. Version control, AI completion, mind map, documents encryption, code snippet running, integrated terminal, chart embedding, HTML applets, Reveal.js, plug-in, and macro replacement."
     homepage "https://yank-note.com/zh-CN"
