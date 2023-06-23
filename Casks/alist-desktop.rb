@@ -12,6 +12,7 @@ cask "alist-desktop" do
     strategy :github_latest
   end
 
+  auto_updates true
   app "alist-desktop.app"
 
   zap trash: [

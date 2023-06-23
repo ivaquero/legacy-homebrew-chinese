@@ -13,6 +13,7 @@ cask "hapigo" do
     regex(/最新版本 v?(\d+(?:\.\d+)+)/i)
   end
 
+  auto_updates true
   app "HapiGo.app"
 
   zap trash: [

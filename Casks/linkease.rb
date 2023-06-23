@@ -13,6 +13,7 @@ cask "linkease" do
     regex(/v?(\d+(?:\.\d+)+)/i)
   end
 
+  auto_updates true
   app "LinkEase.app"
 
   zap trash: [

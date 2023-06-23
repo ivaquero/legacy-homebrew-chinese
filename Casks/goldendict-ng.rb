@@ -1,9 +1,8 @@
 cask "goldendict-ng" do
-  version "6.4.3,20230601"
-  sha256 "bc04acbd5db51d50b8b6262d69117304df96776472b7a1df7ad42dafafe573ff"
+  version "6.5.1,20230623"
+  sha256 "8cfe961c6bf79a6664e603739657880d73f8a0ff9babe004505e266be2d26e61"
 
-  url "https://github.com/xiaoyifang/goldendict-ng/releases/download/v23.06.01-ChildrenDay.230601.6d3d4053/#{version.csv.first}-GoldenDict_macos-12_homebrew_#{version.csv.second}.dmg"
-
+  url "https://github.com/xiaoyifang/goldendict-ng/releases/download/tag-alpha.2a7d4d5e/#{version.csv.first}-GoldenDict_macos-12_homebrew_#{version.csv.second}.dmg"
   name "GoldenDict"
   desc "The Next Generation GoldenDict"
   homepage "http://goldendict.org/"
@@ -18,8 +17,8 @@ cask "goldendict-ng" do
   binary "#{appdir}/GoldenDict.app/Contents/MacOS/GoldenDict"
 
   zap trash: [
-    "~/Library/Preferences/org.goldendict.plist",
-    "~/Library/Saved Application State/org.goldendict.savedState",
+    "~/Library/Caches/GoldenDict-ng",
+    "~/Library/Saved Application State/org.xiaoyifang.savedState",
     "~/.goldendict",
   ]
 end

@@ -15,6 +15,7 @@ cask "messauto" do
     strategy :github_latest
   end
 
+  auto_updates true
   app "MessAuto.app"
 
   zap trash: [

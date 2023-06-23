@@ -17,6 +17,8 @@ cask "texstudio-cn" do
     strategy :github_latest
   end
 
+  auto_updates true
+  conflicts_with cask: "texstudio"
   app "texstudio.app"
 
   zap trash: [

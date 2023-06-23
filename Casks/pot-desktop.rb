@@ -15,6 +15,7 @@ cask "pot-desktop" do
     strategy :github_latest
   end
 
+  auto_updates true
   app "pot.app"
 
   zap trash: [

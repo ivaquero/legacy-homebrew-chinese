@@ -12,6 +12,7 @@ cask "lyx-cn" do
     regex(/LyX[._-]v?(\d+(?:\.\d+)+)\+qt5/i)
   end
 
+  auto_updates true
   conflicts_with cask: "lyx"
   depends_on macos: ">= :mojave"
 

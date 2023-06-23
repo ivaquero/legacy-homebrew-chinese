@@ -14,6 +14,7 @@ cask "edrawmax" do
   name "EdrawMax"
   desc "Diagram software"
 
+  auto_updates true
   app "EdrawMax.app"
 
   zap trash: [

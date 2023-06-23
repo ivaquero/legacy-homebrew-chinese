@@ -26,6 +26,7 @@ cask "qt-creator-cn" do
     end
   end
 
+  auto_updates true
   conflicts_with cask: "qt-creator"
   depends_on macos: ">= :sierra"
 

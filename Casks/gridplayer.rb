@@ -7,6 +7,7 @@ cask "gridplayer" do
   desc "Play videos side-by-side"
   homepage "https://github.com/vzhd1701/gridplayer"
 
+  auto_updates true
   app "gridplayer.app"
 
   zap trash: [
