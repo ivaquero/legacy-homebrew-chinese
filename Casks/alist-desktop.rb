@@ -1,5 +1,5 @@
 cask "alist-desktop" do
-  version "3.18.0"
+  version "3.19.0"
   sha256 "0dac04dbd120aa76393feb564075fb14d530e34031fd8a833ab56c0cac1dba6a"
 
   url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_x64.dmg"
