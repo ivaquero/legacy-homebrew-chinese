@@ -1,7 +1,7 @@
 class Shurl < Formula
   desc "A SELF-built SHORT CHAIN SHORTCUT BASED ON YOURLS"
   homepage "https://github.com/Mrered/yourlsh"
-  version "0.2.0"
+  version "1.0.0"
   license "MIT"
   version_scheme 1
 
@@ -11,7 +11,7 @@ class Shurl < Formula
   end
 
   url "https://github.com/Mrered/yourlsh/releases/download/v#{version}/shurl.tar.gz"
-  sha256 "f8530a8159c6791dbede34822541ef9327e91a2c9bd0178540c9b1e3aa247db1"
+  sha256 "bfc60c36db29e5d84e11e8f3b80d77a86836a76219ffe69011bbec8e821b3abd"
 
   def install
     bin.install "shurl"
