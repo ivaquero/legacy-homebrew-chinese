@@ -8,10 +8,6 @@ cask "texstudio-cn" do
   desc "LaTeX editor"
   homepage "https://texstudio.org/"
 
-  auto_updates true
-  conflicts_with cask: "texstudio"
-  depends_on macos: ">= :big_sur"
-
   livecheck do
     url "https://github.com/texstudio-org/texstudio/"
     strategy :github_latest
@@ -19,6 +15,7 @@ cask "texstudio-cn" do
 
   auto_updates true
   conflicts_with cask: "texstudio"
+  depends_on macos: ">= :big_sur"
   app "texstudio.app"
 
   zap trash: [
