@@ -31,7 +31,7 @@ jobs:
           brew tap ivaquero/chinese
       - name: Test
         run: |
-          brew install openai-translator
+          brew install clash-verge
   # job2:
   #   name: Test Other Casks
   #   runs-on: ${{ matrix.os }}
