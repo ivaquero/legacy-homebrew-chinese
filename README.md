@@ -115,8 +115,10 @@ brew help
 
 ### CLI 软件
 
-|      名      |   CLI 名    |   类型   | 原创 |
-| :----------: | :---------: | :------: | :--: |
-| music player | musicplayer | 开源软件 |  √   |
-|     VTM      |     vtm     | 开源软件 |  √   |
-|    shurl     |    shurl    | 开源软件 |  √   |
+|      名      |   CLI 名    |   类型   | 原创  |
+| :----------: | :---------: | :------: | :---: |
+| Music Player | musicplayer | 开源软件 |   √   |
+|     VTM      |     vtm     | 开源软件 |   √   |
+|    shurl     |    shurl    | 开源软件 |   √   |
+|   ChatGPT    | chatgpt-cli | 开源软件 |   √   |
+|   DDNS-Go    |   ddns-go   | 开源软件 |   √   |
