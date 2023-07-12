@@ -59,11 +59,12 @@ jobs:
           token: ${{ secrets.HOMEBREW_CASK_REPO_WORKFLOW_TOKEN }}
           casks: ${{ github.event.inputs.casks || env.CASKS }}
 
-      # - name: Bump Casks
-      #   run: |
-      #     for cask in Casks/*.rb; do
-      #       echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" | xargs brew bump-cask-pr
-      #     done
+      - name: Bumping Casks
+        run: |
+          brew install sd
+          for cask in Casks/*.rb; do
+            echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" | xargs brew bump-cask-pr
+          done
 
   # job2:
   #   name: Test Formulae on Linux
