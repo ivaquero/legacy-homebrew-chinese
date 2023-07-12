@@ -16,6 +16,46 @@ on:
     # Every day at 5am
     - cron: "0 5 * * *"
 
+env:
+  CASKS: >
+    alist-desktop
+    amazon-corretto-8
+    basictex-cn
+    blender-cn
+    chatgpt
+    clash-verge
+    eshelper
+    freecad-cn
+    gimp-cn
+    goldendict-ng
+    gopeed
+    gridplayer
+    hapigo
+    i4tools
+    iina-cn
+    inkscape-cn
+    julia-cn
+    libreoffice-cn
+    linkease
+    lyx-cn
+    m3u8-downloader
+    mambaforge-cn
+    messauto
+    miniforge-cn
+    obs-cn
+    openai-translator
+    openstudio
+    pareto-security
+    pot-desktop
+    qt-creator-cn
+    texstudio-cn
+    ting-en
+    ting-es
+    ting-fr
+    vlc-cn
+    vscodium-cn
+    yank-note
+
 permissions:
   contents: read
 
@@ -60,15 +100,15 @@ jobs:
           token: ${{ secrets.HOMEBREW_CASK_REPO_WORKFLOW_TOKEN }}
           casks: ${{ github.event.inputs.casks || env.CASKS }}
 
-      - name: Bumping Casks
-        run: |
-          brew install ripgrep sd
-          for cask in Casks/*.rb; do
-            cask_name=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
-            cask_version=$(brew livecheck $cask_name)
-            new_version=$(echo $cask_version | rg -o "> \d.+" | sd "> " "")
-            brew bump-cask-pr --version $new_version $cask_name
-          done
+      # - name: Bumping Casks
+      #   run: |
+      #     brew install ripgrep sd
+      #     for cask in Casks/*.rb; do
+      #       cask_name=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
+      #       cask_version=$(brew livecheck $cask_name)
+      #       new_version=$(echo $cask_version | rg -o "> \d.+" | sd "> " "")
+      #       brew bump-cask-pr --version $new_version $cask_name
+      #     done
 
   # job2:
   #   name: Test Formulae on Linux
