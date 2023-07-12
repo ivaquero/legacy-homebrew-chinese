@@ -61,7 +61,7 @@ jobs:
 
       - name: Bumping Casks
         run: |
-          brew install sd
+          brew install ripgrep sd
           for cask in Casks/*.rb; do
             cask_name=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
             cask_version=$(brew livecheck $cask_name)
