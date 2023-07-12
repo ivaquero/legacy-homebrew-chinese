@@ -3,8 +3,8 @@ name: CI
 on:
   pull_request:
     branches: [main]
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   workflow_dispatch:
     inputs:
       casks:
@@ -92,7 +92,6 @@ jobs:
       - name: Add Tap
         run: |
           brew tap ivaquero/chinese
-          export 'HOMEBREW_GITHUB_API_TOKEN=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'  >> /Users/runner/.bash_profile
 
       - name: Configure Git user
         uses: Homebrew/actions/git-user-config@master

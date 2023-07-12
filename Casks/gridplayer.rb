@@ -7,6 +7,11 @@ cask "gridplayer" do
   desc "Play videos side-by-side"
   homepage "https://github.com/vzhd1701/gridplayer"
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
   auto_updates true
   app "gridplayer.app"
 
