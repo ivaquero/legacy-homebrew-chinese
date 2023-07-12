@@ -17,6 +17,12 @@ on:
     - cron: "0 5 * * *"
 
 env:
+  FORMULAE: >
+    chatgpt-cli
+    ddns-go
+    musicplayer
+    shurl
+    vtm
   CASKS: >
     alist-desktop
     amazon-corretto-8
@@ -100,37 +106,42 @@ jobs:
           token: ${{ secrets.HOMEBREW_CASK_REPO_WORKFLOW_TOKEN }}
           casks: ${{ github.event.inputs.casks || env.CASKS }}
 
-      # - name: Bumping Casks
-      #   run: |
-      #     brew install ripgrep sd
-      #     for cask in Casks/*.rb; do
-      #       cask_name=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
-      #       cask_version=$(brew livecheck $cask_name)
-      #       new_version=$(echo $cask_version | rg -o "> \d.+" | sd "> " "")
-      #       brew bump-cask-pr --version $new_version $cask_name
-      #     done
+  job2:
+    name: Test Formulae
+    runs-on: ${{ matrix.os }}
 
-  # job2:
-  #   name: Test Formulae on Linux
-  #   runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
 
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       with:
-  #         repository: ivaquero/homebrew-chinese
-  #         ref: main
-  #         path: homebrew-chinese
-  #     - name: Set up Homebrew
-  #       uses: Homebrew/actions/setup-homebrew@master
-  #       with:
-  #         homebrew-version: "3.0.8"
-  #         cache-version: v3
-  #     - name: Install dependencies
-  #       run: |
-  #         brew tap ivaquero/chinese
-  #         brew install ripgrep sd
-  #     - name: Bump Formulae
-  #       run: |
-  #         for form in Formula/*.rb; do
-  #             echo "ivaquero/chinese/$form" | sd "/Formula" "" | sd ".rb" "" | xargs brew bump-pr
-  #         done
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: ivaquero/homebrew-chinese
+          ref: main
+          path: homebrew-chinese
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: true
+          cask: false
+          test-bot: false
+
+      - name: Add Tap
+        run: |
+          brew tap ivaquero/chinese
+          export 'HOMEBREW_GITHUB_API_TOKEN=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'  >> /Users/runner/.bash_profile
+
+      - name: Configure Git user
+        uses: Homebrew/actions/git-user-config@master
+        with:
+          username: ${{ (github.event_name == 'workflow_dispatch' && github.actor) || 'BrewTestBot' }}
+
+      - name: Bump formulae
+        uses: Homebrew/actions/bump-packages@master
+        continue-on-error: true
+        with:
+          token: ${{ secrets.HOMEBREW_CORE_REPO_WORKFLOW_TOKEN }}
+          formulae: ${{ github.event.inputs.formulae || env.FORMULAE }}
