@@ -63,7 +63,10 @@ jobs:
         run: |
           brew install sd
           for cask in Casks/*.rb; do
-            echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "" | xargs brew bump-cask-pr
+            cask_name = $(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
+            cask_version = $(brew livecheck $cask_name)
+            new_version = $(echo $cask_version | rg -o "> \d.+" | sd "> " "")
+            brew bump-cask-pr --version $new_version cask_name
           done
 
   # job2:
