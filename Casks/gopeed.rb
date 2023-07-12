@@ -3,6 +3,7 @@ cask "gopeed" do
   sha256 "abd0083788ebad8ae097d92ee5b35504599457d37dfcbe5ba94d192d9169b8dd"
 
   url "https://github.com/GopeedLab/gopeed/releases/download/v#{version}/Gopeed-v#{version}-macos.dmg"
+      verified:   "github.com/GopeedLab/gopeed/"
   name "Gopeed"
   desc "High speed downloader that supports all platforms."
   homepage "https://gopeed.com/"

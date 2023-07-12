@@ -6,7 +6,7 @@ cask "alist-desktop" do
          intel: "6545a7f6c5ae222952de6453620bc75127675cca08c30d206dcd1f5174a1f414"
 
   url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg",
-      verified:   "alist.nn.ci/"
+      verified:   "github.com/alist-org/"
   name "AList-Desktop"
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://alist.nn.ci/zh/"

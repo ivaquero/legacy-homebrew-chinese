@@ -6,7 +6,7 @@ cask "miniforge-cn" do
          intel: "1d837379b50b57bf009b6a6956a7cff10dc25ca52a940a35b7090f2e9b6c5482"
 
   url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
-      verified:   "github.com/conda-forge/miniforge/"
+      verified:   "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
   homepage "https://github.com/conda-forge/miniforge"
