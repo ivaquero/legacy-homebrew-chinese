@@ -5,7 +5,7 @@ cask "yank-note" do
   sha256 arm:   "d9cd54be5ba48f0ff8a6c96735230f43ef95709b3a6f704e7a1c1fd75f44283a",
          intel: "e7196d549b965cf58bc52c7c509b42eeea6229ad0377ecccdf06ad96a357907a"
 
-  url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
+  url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg",
       verified:   "yank-note.com/",
       user_agent: :fake
   name "Yank Note"
