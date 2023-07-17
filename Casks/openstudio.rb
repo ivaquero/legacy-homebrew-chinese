@@ -1,7 +1,7 @@
 cask "openstudio" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "3.5.0,7b14ce1588"
+  version "3.6.1"
   sha256 arm:   "1dccf520d807e2eb6510e5c0f33f8d2dd11381143ea4b1ef5c0230d371c6dcd4",
          intel: "033e5383fec82327196d8a58834a50f95a37d2e4dde9f397cdd34317a2a7d8d7"
 

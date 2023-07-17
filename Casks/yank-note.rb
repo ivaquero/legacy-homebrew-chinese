@@ -8,7 +8,7 @@ cask "yank-note" do
   url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg",
       verified:   "github.com/purocean/yn/"
   name "Yank Note"
-  desc "A highly extensible Markdown editor. Version control, AI completion, mind map, documents encryption, code snippet running, integrated terminal, chart embedding, HTML applets, Reveal.js, plug-in, and macro replacement."
+  desc "Highly extensible Markdown editor"
   homepage "https://yank-note.com/zh-CN"
 
   livecheck do
@@ -23,7 +23,5 @@ cask "yank-note" do
     "~/Library/Saved Application State/yank.note.savedState",
     "~/Library/Preferences/yank.note.plist",
     "~/Library/Logs/yank.note",
-    "/private/var/folders/kh/3z1m41y56mgd98lxmb9zjjsw0000gn/T/.yank.note.MV2ZNg",
-    "/private/var/folders/kh/3z1m41y56mgd98lxmb9zjjsw0000gn/C/yank.note.helper.GPU",
   ]
 end

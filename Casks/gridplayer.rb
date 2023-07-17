@@ -8,7 +8,7 @@ cask "gridplayer" do
   homepage "https://github.com/vzhd1701/gridplayer"
 
   livecheck do
-    url :homepage
+    url :url
     strategy :github_latest
   end
 
