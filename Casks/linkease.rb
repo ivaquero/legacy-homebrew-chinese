@@ -1,6 +1,6 @@
 cask "linkease" do
   version "1.1.9"
-  sha256 "e020c81e4c75413a1f126f6b0f15457334af2114109397b6cd68526c3d35b3a1"
+  sha256 :no_check
 
   url "https://fw8.koolcenter.com:5000/binary/LinkEase/Client/LinkEase.dmg"
   name "LinkEase"
