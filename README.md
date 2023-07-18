@@ -111,7 +111,7 @@ brew help
 |        HapiGo         |      hapogo       |     国产商业软件     |   √   |
 |       爱斯助手        |      i4tools      |     国产商业软件     |   √   |
 |        易有云         |     linkease      |     国产商业软件     |   √   |
-| 亿图图示 9 (固定版本) |     edrawmax      |     国产商业软件     |   √   |
+| 亿图图示 9 (固定版本) |     edrawmax-9      |     国产商业软件     |   √   |
 
 ### CLI 软件
 

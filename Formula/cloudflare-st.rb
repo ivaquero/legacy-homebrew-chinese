@@ -2,10 +2,11 @@ class CloudflareSt < Formula
   desc "Select the best IP for your Mac on Cloudflare CDN"
   homepage "https://github.com/XIU2/CloudflareSpeedTest"
   license "GPL-3.0"
+  version "2.2.3"
 
   arch = Hardware::CPU.arm? ? "arm64" : "amd64"
 
-  url "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.2.3/CloudflareST_darwin_#{arch}.zip"
+  url "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v#{version}/CloudflareST_darwin_#{arch}.zip"
 
   if Hardware::CPU.arm?
     sha256 "52972db6391bd9247b198e516850f3b270bf24e3d5aca4edc5a6602aefb76dc5"
