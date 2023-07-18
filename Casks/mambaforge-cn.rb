@@ -1,9 +1,9 @@
 cask "mambaforge-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "23.1.0-2"
-  sha256 arm:   "a58be683b4c00c32591eedc7a6675c8a4d3c7cbf3ef3808f4513033de46be7c8",
-         intel: "f7c53778a47579d886441747a7fe697d020da3b1726f3f7fe7d7e779c3d506e2"
+  version "23.1.0-4"
+  sha256 arm:   "baa1ae638537766cac808efba09175ba21878b34288476dc7bbd01347145721f",
+         intel: "26937ea98870531e51da942b7f6cc26cc9af49bb16390486ee6dde9e0dc2c597"
 
   url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Mambaforge-#{version}-MacOSX-#{arch}.sh",
       verified:   "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"

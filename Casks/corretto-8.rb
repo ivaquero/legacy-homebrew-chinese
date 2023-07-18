@@ -1,4 +1,4 @@
-cask "amazon-corretto-8" do
+cask "corretto-8" do
   arch arm: "aarch64", intel: "x64"
 
   version "8.372.07.1"
