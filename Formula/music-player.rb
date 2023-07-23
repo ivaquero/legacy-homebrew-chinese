@@ -1,4 +1,4 @@
-class Musicplayer < Formula
+class MusicPlayer < Formula
   desc "Extensible music server written in Rust"
   homepage "https://github.com/tsirysndr/music-player"
   license "MIT"

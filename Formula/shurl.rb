@@ -1,5 +1,5 @@
 class Shurl < Formula
-  desc "A SELF-built SHORT CHAIN SHORTCUT BASED ON YOURLS"
+  desc "Self-built short chain shortcut based on YOURLS"
   homepage "https://github.com/Mrered/yourlsh"
   license "MIT"
   version "2.0.0"
