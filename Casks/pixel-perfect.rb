@@ -8,7 +8,12 @@ cask "pixel-perfect" do
   name "Pixel Perfect"
   desc "Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution. Compatible with macOS Sonoma, macOS Ventura, macOS Monterey, and macOS Big Sur."
   homepage "https://github.com/cormiertyshawn895/PixelPerfect"
-  caveats "After downloading Pixel Perfect, double click to open it. macOS may prompt you “Pixel Perfect cannot be opened because it is from an unidentified developer.” This is expected. To open Pixel Perfect, right-click on Pixel Perfect, then click “Open” as shown below."
+  
+  caveats <<~EOS
+  After downloading Pixel Perfect, double click to open it. macOS may prompt you “Pixel Perfect cannot be opened because it is from an unidentified developer.” This is expected.
+
+  To open Pixel Perfect, right-click on Pixel Perfect, then click “Open” as shown below.
+  EOS
 
   livecheck do
     url :url
