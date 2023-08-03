@@ -3,7 +3,7 @@ cask "chatgpt" do
 
   version "1.1.0"
   sha256 arm:   "f870ba135ad990715474cbb038b5b38acb8d08640803e2c79c878e210f4800f6",
-         intel: "474c6024ac1100512c242449da8d93b521334d0d03a9457c42446293a64eaff4"
+         intel: "6747e61a507402fa4b36db443c37a79299a4e1d4ba9904298a0b00c3e6a243b6"
 
   url "https://github.com/lencx/ChatGPT/releases/download/v#{version}/ChatGPT_#{version}_macos_#{arch}.dmg"
   name "ChatGPT"

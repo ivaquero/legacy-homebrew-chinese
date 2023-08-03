@@ -92,7 +92,6 @@ jobs:
       - name: Add Tap
         run: |
           brew tap ivaquero/chinese
-          brew install chatgpt
 
       - name: Configure Git user
         uses: Homebrew/actions/git-user-config@master
