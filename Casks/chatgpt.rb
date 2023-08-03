@@ -1,8 +1,8 @@
 cask "chatgpt" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "1.0.0"
-  sha256 arm:   "998d15813194957de140a530605252fdf3f68fafdba1353706fa00d070c7c23d",
+  version "1.1.0"
+  sha256 arm:   "f870ba135ad990715474cbb038b5b38acb8d08640803e2c79c878e210f4800f6",
          intel: "474c6024ac1100512c242449da8d93b521334d0d03a9457c42446293a64eaff4"
 
   url "https://github.com/lencx/ChatGPT/releases/download/v#{version}/ChatGPT_#{version}_macos_#{arch}.dmg"
