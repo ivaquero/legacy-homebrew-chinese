@@ -80,7 +80,9 @@ brew help
 
 |        App 名         |      Cask 名      |         类型         | 原创 |
 | :-------------------: | :---------------: | :------------------: | :--: |
+|        PeaZip         |      peazip       |       开源软件       |  √   |
 |     Alist-Desktop     |   alist-desktop   | 开源软件（国人开发） |  √   |
+|     Alist-Helper      |   alist-helper    | 开源软件（国人开发） |  √   |
 |        ChatGPT        |      chatgpt      | 开源软件（国人开发） |  √   |
 |      Clash-Verge      |    clash-verge    | 开源软件（国人开发） |  √   |
 |     GoldenDict-ng     |   goldendict-ng   | 开源软件（国人开发） |  √   |

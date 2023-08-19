@@ -6,7 +6,7 @@ cask "alist-helper" do
   url "https://github.com/Xmarmalade/alisthelper/releases/download/v#{version}/AlistHelper_v#{version}_macos.dmg",
     verified:   "github.com/Xmarmalade/"
   name "Alist Helper"
-  desc "Alist Helper is an application developed using Flutter, designed to simplify the use of the desktop version of alist. It can manage alist, allowing you to easily start and stop the alist program."
+  desc "Application to simplify the use of the desktop version of alist."
   homepage "https://github.com/Xmarmalade/alisthelper"
 
   livecheck do
