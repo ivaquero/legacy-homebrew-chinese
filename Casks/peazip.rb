@@ -3,7 +3,7 @@ cask "peazip" do
 
   version "9.4.0"
   sha256 arm:   "9f1c361273fd2beda788a6b83a76186940bcbb9c2292bc9e1865603b9b50a28c",
-         intel: "65f184f2a79be59096231b9f18daf4a22018c4f47f99c4b503278b86bb60af9a"
+         intel: "0892e81c36b643a76cf6fbea5f767bbbe395cd11a58beff9a34d2be437b2f88b"
 
   url "https://github.com/peazip/PeaZip/releases/download/#{version}/peazip-#{version}.DARWIN.#{arch}.dmg"
   name "Peazip"
@@ -16,11 +16,13 @@ cask "peazip" do
   end
 
   auto_updates true
+
   app "PeaZip.app"
 
   postflight do
     system_command "/usr/bin/open", args: ["#{staged_path}/macOS service menus/PeaZip, add to archive.workflow"]
-    system_command "/usr/bin/open", args: ["#{staged_path}/macOS service menus/PeaZip, extract here (smart new folder).workflow"]
+    system_command "/usr/bin/open",
+                   args: ["#{staged_path}/macOS service menus/PeaZip, extract here (smart new folder).workflow"]
     system_command "/usr/bin/open", args: ["#{staged_path}/macOS service menus/PeaZip, extract....workflow"]
     system_command "/usr/bin/open", args: ["#{staged_path}/macOS service menus/PeaZip, open file or folder.workflow"]
   end
