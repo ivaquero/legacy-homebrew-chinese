@@ -3,12 +3,11 @@ cask "pixel-perfect" do
   version "1.2"
   sha256 "163b96ba5bea26507a9625237726a20b8a4586250a6e5883700f20cadb65e386"
 
-  url "https://github.com/cormiertyshawn895/PixelPerfect/releases/download/#{version}/PixelPerfect.#{version}.zip",
-    verified:   "github.com/cormiertyshawn895/"
+  url "https://github.com/cormiertyshawn895/PixelPerfect/releases/download/#{version}/PixelPerfect.#{version}.zip"
   name "Pixel Perfect"
-  desc "Pixel Perfect lets you increase the text size of iPhone and iPad apps on Mac. Say goodbye to small and blurry text, and enjoy pixel-perfect graphics, all rendered at 100% native resolution. Compatible with macOS Sonoma, macOS Ventura, macOS Monterey, and macOS Big Sur."
+  desc "Application lets you increase the text size of iPhone and iPad apps on Mac."
   homepage "https://github.com/cormiertyshawn895/PixelPerfect"
-  
+
   caveats <<~EOS
   After downloading Pixel Perfect, double click to open it. macOS may prompt you “Pixel Perfect cannot be opened because it is from an unidentified developer.” This is expected.
 
