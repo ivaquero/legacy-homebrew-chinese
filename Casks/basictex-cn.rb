@@ -2,8 +2,8 @@ cask "basictex-cn" do
   version "2023.0314"
   sha256 "bee681935e4af6dd3ae79229ccd5437e6a0ced138b530e88fe66a95a13c113b1"
 
-  url "https://mirrors.bfsu.edu.cn/CTAN/systems/mac/mactex/mactex-basictex-#{version.no_dots}.pkg",
-      verified: "mirror.ctan.org/systems/mac/mactex/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/mactex-basictex-#{version.no_dots}.pkg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/"
   name "BasicTeX"
   desc "Compact TeX distribution as alternative to the full TeX Live / MacTeX"
   homepage "https://www.tug.org/mactex/morepackages.html"

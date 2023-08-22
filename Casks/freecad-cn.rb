@@ -2,8 +2,8 @@ cask "freecad-cn" do
   version "0.20.2,2022-12-27"
   sha256 "3808bdf0751a70770b1d561269d9d014f9c486eb49bc4e187d106d3d2664d347"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/FreeCAD/FreeCAD/LatestRelease/FreeCAD_#{version.csv.first}-#{version.csv.second}-conda-macOS-x86_64-py310.dmg",
-      verified: "github.com/FreeCAD/FreeCAD/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/LatestRelease/FreeCAD_#{version.csv.first}-#{version.csv.second}-conda-macOS-x86_64-py310.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/"
   name "FreeCAD"
   desc "3D parametric modeler"
   homepage "https://www.freecadweb.org/"

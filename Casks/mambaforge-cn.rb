@@ -5,8 +5,8 @@ cask "mambaforge-cn" do
   sha256 arm:   "71e7ea4295d22f0c7ab08b334c07d9540e10775c8abd456314e186625cfb3bf1",
          intel: "b7b5fe0690528a4d449597e49edb2595625f2cf29e0473fd2a8d2dabc4d948f5"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Mambaforge-#{version}-MacOSX-#{arch}.sh",
-      verified:   "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Mambaforge-#{version}-MacOSX-#{arch}.sh",
+      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/"
   name "mambaforge"
   desc "Minimal installer for conda with preinstalled support for Mamba"
   homepage "https://github.com/conda-forge/miniforge"

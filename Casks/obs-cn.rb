@@ -5,8 +5,8 @@ cask "obs-cn" do
   sha256 arm:   "ad8586d6af8dd4a0039e6074cf92213340f3d2408cf87e3593fa0822cbc8a73a",
          intel: "0e87051cd5ee50f9efb9c9052d79a3d598761b154308213c40accacc3c9d0895"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/obsproject/obs-studio/LatestRelease/obs-studio-#{version}-macos-#{arch}.dmg",
-      verified: "mirrors.bfsu.edu.cn/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/obs-studio-#{version}-macos-#{arch}.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "OBS"
   desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/"

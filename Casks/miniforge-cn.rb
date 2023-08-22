@@ -5,8 +5,8 @@ cask "miniforge-cn" do
   sha256 arm:   "de48052b85900a3878cedbb25add7e17b14d5bdfba8ba523791851a10a6b84fe",
          intel: "a43f4e34aa27b5cb849027b01b03931df52f768fc8b82b1f72f40ff064abb6f3"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
-      verified:   "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
+      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/"
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
   homepage "https://github.com/conda-forge/miniforge"

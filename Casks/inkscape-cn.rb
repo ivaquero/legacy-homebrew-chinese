@@ -5,7 +5,8 @@ cask "inkscape-cn" do
   sha256 arm:   "e101f59f5ae858ac21199cd434dfc903b6e409eaebecc9447b9451b6a38cbd86",
          intel: "d2e9969ba8b5056926b08719e527f781cca9f6b35fdbc54e855d0540c93709b2"
 
-  url "https://mirror.nju.edu.cn/inkscape/Inkscape-#{version}_#{arch}.dmg"
+  url "https://mirror.nju.edu.cn/inkscape/Inkscape-#{version}_#{arch}.dmg",
+      verified: "mirror.nju.edu.cn/inkscape/"
   name "Inkscape"
   desc "Vector graphics editor"
   homepage "https://inkscape.org/"

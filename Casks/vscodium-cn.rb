@@ -5,8 +5,8 @@ cask "vscodium-cn" do
   sha256 arm:   "b43bd1717357802652c5a7827e2a7e2761620df64839a16dde2ff66c3c220838",
          intel: "592e0b901e74ae345500d21df2fcf93782b15bba80171df4c32fe80d02def024"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/VSCodium/vscodium/LatestRelease/VSCodium.#{arch}.#{version}.dmg",
-      verified: "mirrors.bfsu.edu.cn/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/VSCodium.#{arch}.#{version}.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "VSCodium"
   desc "Binary releases of VS Code without MS branding/telemetry/licensing"
   homepage "https://github.com/VSCodium/vscodium"
