@@ -4,7 +4,7 @@ class ChatgptCli < Formula
   version "1.2.0"
   license "MIT"
 
-  on_macos do
+  if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/j178/chatgpt/releases/download/v#{version}/chatgpt_Darwin_arm64.tar.gz"
       sha256 "265549694c199faf5f979f6251502f0acba47b3426608c40346647d3c281edb9"
@@ -12,9 +12,7 @@ class ChatgptCli < Formula
       url "https://github.com/j178/chatgpt/releases/download/v#{version}/chatgpt_Darwin_x86_64.tar.gz"
       sha256 "629cfec1dd7841b2d59566634fd257da07978bea482cfaab462cde2778309a1f"
     end
-  end
-
-  on_linux do
+  else
     if Hardware::CPU.arm?
       url "https://github.com/j178/chatgpt/releases/download/v#{version}/chatgpt_Linux_arm64.tar.gz"
       sha256 "4ce0ad0d9e52830bbad16a508c68b1549d20a56d9b92dad3f4277e80019c1dc4"
