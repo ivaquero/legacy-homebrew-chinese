@@ -1,9 +1,9 @@
 cask "vscodium-cn" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.80.1.23194"
-  sha256 arm:   "b43bd1717357802652c5a7827e2a7e2761620df64839a16dde2ff66c3c220838",
-         intel: "592e0b901e74ae345500d21df2fcf93782b15bba80171df4c32fe80d02def024"
+  version "1.83.1.23285"
+  sha256 arm:   "bbee200cd3d64e435176e92c774e670b73d8f9f708c03dbb497c4bb8a1b6ddec",
+         intel: "16999acbae4473546d951ee8403b1d3018497292574e23dc3d8a79d4c30ed4cf"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/VSCodium.#{arch}.#{version}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/"
