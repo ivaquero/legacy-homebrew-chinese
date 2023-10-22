@@ -1,11 +1,8 @@
 cask "chatgpt" do
-  arch arm: "aarch64", intel: "x86_64"
-
   version "1.1.0"
-  sha256 arm:   "f870ba135ad990715474cbb038b5b38acb8d08640803e2c79c878e210f4800f6",
-         intel: "6747e61a507402fa4b36db443c37a79299a4e1d4ba9904298a0b00c3e6a243b6"
+  sha256 "f870ba135ad990715474cbb038b5b38acb8d08640803e2c79c878e210f4800f6"
 
-  url "https://github.com/lencx/ChatGPT/releases/download/v#{version}/ChatGPT_#{version}_macos_#{arch}.dmg"
+  url "https://github.com/lencx/ChatGPT/releases/download/v#{version}/ChatGPT_#{version}_macos_aarch64.dmg"
   name "ChatGPT"
   desc "Desktop wrapper for OpenAI ChatGPT"
   homepage "https://github.com/lencx/ChatGPT"

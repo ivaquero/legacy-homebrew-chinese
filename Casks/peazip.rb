@@ -1,11 +1,8 @@
 cask "peazip" do
-  arch arm: "aarch64", intel: "x86_64"
+  version "9.5.0"
+  sha256 "3855825eaeb983c1544aa0bc9dfb4efcc3111e52ff365ea2c4336415b730b45d"
 
-  version "9.4.0"
-  sha256 arm:   "9f1c361273fd2beda788a6b83a76186940bcbb9c2292bc9e1865603b9b50a28c",
-         intel: "0892e81c36b643a76cf6fbea5f767bbbe395cd11a58beff9a34d2be437b2f88b"
-
-  url "https://github.com/peazip/PeaZip/releases/download/#{version}/peazip-#{version}.DARWIN.#{arch}.dmg"
+  url "https://github.com/peazip/PeaZip/releases/download/#{version}/peazip-#{version}.DARWIN.aarch64.dmg"
   name "Peazip"
   desc "Free Zip/Unzip software and Rar file extractor"
   homepage "https://github.com/peazip/PeaZip"
