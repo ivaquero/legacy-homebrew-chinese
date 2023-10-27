@@ -16,7 +16,7 @@ cask "barss" do
   app "baRSS.app"
 
   zap trash: [
-    "~/Users/mrered/Library/Application Scripts/de.relikd.baRSS",
-    "~/Users/mrered/Library/Containers/de.relikd.baRSS",
+    "~/Library/Application Scripts/de.relikd.baRSS",
+    "~/Library/Containers/de.relikd.baRSS",
   ]
 end
