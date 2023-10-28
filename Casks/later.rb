@@ -9,4 +9,9 @@ cask "later" do
   homepage "https://getlater.app/"
 
   app "Later.app"
+  
+  zap trash: [
+    "~/Library/Preferences/alyssaxuu.Later.plist",
+    "~/Library/Saved Application State/alyssaxuu.Later.savedState",
+  ]
 end
