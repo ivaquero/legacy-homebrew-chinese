@@ -4,7 +4,7 @@ cask "app-cleaner-cn" do
 
   url "https://download.nektony.com/download/app-cleaner-uninstaller/localized/app-cleaner-uninstaller-cn.dmg"
   name "app-cleaner-cn"
-  desc "在Mac上卸载应用程序而不会留下任何痕迹"
+  desc "在 Mac 上卸载应用程序而不会留下任何痕迹"
   homepage "https://nektony.com/zh-hans/mac-app-cleaner"
 
   livecheck do
