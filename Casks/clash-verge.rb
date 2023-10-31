@@ -1,6 +1,6 @@
 cask "clash-verge" do
-  version "1.3.7"
-  sha256 "dbf2b5cbb75e833a6e1b6e57c448afc8b03ec60937fcf79766b4697ed7fdf1c2"
+  version "1.3.8"
+  sha256 "fd8370323a695a8828d1a7487c9e74200ce36b51b324495bfba21498c6fc8c48"
 
   url "https://github.com/zzzgydi/clash-verge/releases/download/v#{version}/Clash.Verge_#{version}_aarch64.dmg"
   name "Clash for Windows"
