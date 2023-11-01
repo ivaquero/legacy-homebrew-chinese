@@ -42,13 +42,14 @@ jobs:
       - name: Add Tap
         run: |
           brew tap ivaquero/chinese
+          brew install ripgrep sd
 
       - name: Bump casks
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-          brew install ripgrep sd
           for cask in Casks/*.rb; do
-            cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
+            cask=$(echo "ivaquero/homebrew-chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
+            echo "Checking $cask"
             check=$(brew livecheck --cask "$cask")
             ver=$(echo "$check" | rg -o "\d.+=" | rg -o "\d+(?:\.\d+)+")
             ver2=$(echo "$check" | rg -o ">.+" | rg -o "\d.+")
