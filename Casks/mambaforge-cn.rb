@@ -12,8 +12,8 @@ cask "mambaforge-cn" do
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url :url
-    regex(/v?(\d+(?:[._-]\d+)+)/i)
+    url :homepage
+    regex(/v?(\d+(?:[.-]\d+)+)/i)
     strategy :github_latest
   end
 

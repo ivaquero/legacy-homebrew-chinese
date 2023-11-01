@@ -9,8 +9,8 @@ cask "kicad-cn" do
     homepage "https://kicad.org/"
 
     livecheck do
-      url :url
-      strategy :github_latest
+      url "https://www.kicad.org/download/macos/"
+      regex(/(\d+(?:\.\d+)+)/i)
     end
 
     depends_on macos: ">= :big_sur"
