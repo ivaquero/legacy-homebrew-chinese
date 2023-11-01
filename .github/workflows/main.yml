@@ -46,8 +46,9 @@ jobs:
       - name: Bump casks
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-          brew install ripgrep
+          brew install ripgrep sd
           for cask in Casks/*.rb; do
+            cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
             check=$(brew livecheck --cask "$cask")
             ver=$(echo "$check" | rg -o "\d.+=" | rg -o "\d+(?:\.\d+)+")
             ver2=$(echo "$check" | rg -o ">.+" | rg -o "\d.+")
