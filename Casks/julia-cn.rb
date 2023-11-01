@@ -6,7 +6,7 @@ cask "julia-cn" do
          intel: "a9c78cd01978bd60e838d585581e58750313559c3809aa0ae7ce552c2cdafe39"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
-      verified: "https://mirrors.tuna.tsinghua.edu.cn/julia-releases/bin/mac/"
+      verified: "mirrors.tuna.tsinghua.edu.cn/julia-releases/bin/mac/"
   name "Julia"
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"
