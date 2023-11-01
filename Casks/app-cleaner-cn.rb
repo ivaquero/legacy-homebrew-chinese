@@ -5,12 +5,11 @@ cask "app-cleaner-cn" do
   url "https://download.nektony.com/download/app-cleaner-uninstaller/localized/app-cleaner-uninstaller-cn.dmg"
   name "app-cleaner-cn"
   desc "在 Mac 上卸载应用程序而不会留下任何痕迹"
-  homepage "https://nektony.com/zh-hans/mac-app-cleaner"
+  homepage "https://nektony.com/mac-app-cleaner"
 
   livecheck do
-    url :url
-    strategy :header_match
-    regex(/最新版本 v?(\d+(?:\.\d+)+)/i)
+    url :homepage
+    regex(/Version: v?(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true
