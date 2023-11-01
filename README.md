@@ -102,6 +102,7 @@ brew help
 |       IINA 镜像       |      iina-cn      |     开源软件镜像     |  √   |
 |     Inkscape 镜像     |    inkscape-cn    |     开源软件镜像     |  √   |
 |      Julia 镜像       |     julia-cn      |     开源软件镜像     |  √   |
+|      Kicad 镜像       |     kicad-cn      |     开源软件镜像     |  √   |
 |   LibreOffice 镜像    |  libreoffice-cn   |     开源软件镜像     |  √   |
 |       Lyx 镜像        |      lyx-cn       |     开源软件镜像     |  √   |
 |    Mambaforge 镜像    |   mambaforge-cn   |     开源软件镜像     |  √   |
