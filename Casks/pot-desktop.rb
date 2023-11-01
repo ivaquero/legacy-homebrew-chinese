@@ -1,9 +1,9 @@
 cask "pot-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.3.2"
-  sha256 arm:   "3e8e725d58ed1a3876ee20c943ff0cd49e1a38ee60a344127fae8e92220d71fa",
-         intel: "17eb4113ca7293b12880afb30de4fd6c9801282f66c7ba885afb7e8f02167892"
+  version "2.6.7"
+  sha256 arm:   "3edfc0c987e1e77f19253d0c233fb6a7a7e57abe97ba7a32499f7153f5180ed5",
+         intel: "ca834f16d4746d9d8a137cb6c50db28f477e2eccfc7504f934292b696c0a8558"
 
   url "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
   name "pot"
@@ -16,6 +16,7 @@ cask "pot-desktop" do
   end
 
   auto_updates true
+
   app "pot.app"
 
   zap trash: [
