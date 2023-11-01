@@ -36,13 +36,11 @@ jobs:
           cask: true
           test-bot: false
 
-      - name: Set up git
-        uses: Homebrew/actions/git-user-config@master
-
       - name: Add Tap
         run: |
           brew tap ivaquero/chinese
           brew install ripgrep sd
+          echo 'export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***' >> /Users/runner/.bash_profile
 
       - name: Bump casks
         continue-on-error: true
