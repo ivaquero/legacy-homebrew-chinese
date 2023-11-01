@@ -9,8 +9,8 @@ cask "iina-cn" do
   homepage "https://iina.io/"
 
   livecheck do
-    url "https://github.com/iina/iina/"
-    strategy :github_latest
+    url "https://www.iina.io/appcast.xml"
+    strategy :sparkle # IINA sometimes rebuilds with the same short version.
   end
 
   auto_updates true

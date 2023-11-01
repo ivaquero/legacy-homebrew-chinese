@@ -1,9 +1,9 @@
 cask "vlc-cn" do
   arch arm: "arm64", intel: "intel64"
 
-  version "3.0.18"
-  sha256 arm:   "99c259bdbc5221fd50817f518b70e9bf9ee175e890743903c9807bc778668f47",
-         intel: "88edcdfceb3bd2f680367d9009d38a0c147fa758f2dd395e43412c1e08ce1ccb"
+  version "3.0.19"
+  sha256 arm:   "58458840edf898971a74018f3807557e4016f30df44e13c5fe0a1fb899722099",
+         intel: "043d5f04049d35d657b93d105687dffe53ca5a72246f7e2cd88aa59fc5da9df8"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/videolan-ftp/vlc/last/macosx/vlc-#{version}-#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/videolan-ftp/vlc/"
