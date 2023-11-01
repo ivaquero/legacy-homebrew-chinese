@@ -39,6 +39,7 @@ jobs:
       - name: Add Tap
         run: |
           brew tap ivaquero/chinese
+          brew update
           brew install ripgrep sd
           echo 'export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***' >> /Users/runner/.bash_profile
 
