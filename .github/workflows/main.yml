@@ -48,7 +48,7 @@ jobs:
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           for cask in Casks/*.rb; do
-            cask=$(echo "ivaquero/homebrew-chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
+            cask=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
             check=$(brew livecheck --cask "$cask")
             ver=$(echo "$check" | rg -o "\d.+=" | rg -o "\d+(?:\.\d+)+")
