@@ -43,11 +43,11 @@ jobs:
           brew install ripgrep sd
           echo 'export HOMEBREW_GITHUB_API_TOKEN=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e' >> /Users/runner/.bash_profile
 
-      - name: Bump casks
+      - name: Bump mirorr casks
         continue-on-error: true
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
-          for cask in Casks/*.rb; do
+          for cask in Casks/*-cn.rb; do
             cask=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
             check=$(brew livecheck --cask "$cask")
