@@ -45,6 +45,7 @@ jobs:
           brew install ripgrep sd
 
       - name: Bump casks
+        continue-on-error: true
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           for cask in Casks/*.rb; do
