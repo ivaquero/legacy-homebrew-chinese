@@ -109,14 +109,14 @@ brew help
 |   openstudio    |          [OpenStudio](https://github.com/NREL/OpenStudio)          |   开源软件   |    🆓    |  √   |
 |  freefilesync   |            [FreeFileSync](https://www.freefilesync.org)            |   开源软件   |    🆓    |  √   |
 |  pixel-perfect  | [Pixel Perfect](https://github.com/cormiertyshawn895/PixelPerfect) |   开源软件   |    🆓    |  √   |
-| pareto-security |                [Pareto](https://paretosecurity.com)                |   开源软件   |   🆓💰   |  √   |
+| pareto-security |                [Pareto](https://paretosecurity.com)                |   开源软件   |  🆓💰   |  √   |
 |    lyricsxjh    | [LyricsX JH Fork](https://github.com/JH-Application-Forks/LyricsX) | 开源软件分支 |    🆓    |  √   |
 
 ### 开源软件（国人开发）
 
 |      Cask 名      |                                         App 名                                          |         类型         | 商业模式 | 原创 |
 | :---------------: | :-------------------------------------------------------------------------------------: | :------------------: | :------: | :--: |
-|   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（国人开发） |   🆓💰   |  √   |
+|   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（国人开发） |  🆓💰   |  √   |
 |   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（国人开发） |    🆓    |  √   |
 |      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（国人开发） |    🆓    |  √   |
 |    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（国人开发） |    🆓    |  √   |
@@ -133,18 +133,18 @@ brew help
 |    Cask 名     |                            App 名                            |     类型     | 商业模式 | 原创 |
 | :------------: | :----------------------------------------------------------: | :----------: | :------: | :--: |
 |     feige      |             [飞鸽传书](http://www.ipmsg.org.cn)              | 国产商业软件 |    🆓    |  √   |
-|     hapogo     |                 [HapiGo](https://hapigo.com)                 | 国产商业软件 |   🆓💰   |  √   |
-|    e-study     |        [知网研学（原 E-Study）](https://e-study.com)         | 国产商业软件 |   🆓💰   |  √   |
-|    eshelper    |     [西语助手](https://www.eudic.net/v4/es/app/eshelper)     | 国产商业软件 |   🆓💰   |  √   |
+|     hapogo     |                 [HapiGo](https://hapigo.com)                 | 国产商业软件 |  🆓💰   |  √   |
+|    e-study     |        [知网研学（原 E-Study）](https://e-study.com)         | 国产商业软件 |  🆓💰   |  √   |
+|    eshelper    |     [西语助手](https://www.eudic.net/v4/es/app/eshelper)     | 国产商业软件 |  🆓💰   |  √   |
 |    i4tools     |                [爱思助手](https://www.i4.cn)                 | 国产商业软件 |    🆓    |  √   |
-|    lingquan    |                [零泉](https://lingquan.cool)                 | 国产商业软件 |   🆓💰   |  √   |
+|    lingquan    |                [零泉](https://lingquan.cool)                 | 国产商业软件 |  🆓💰   |  √   |
 |    linkease    |              [易有云](https://doc.linkease.com)              | 国产商业软件 |    🆓    |  √   |
-|    ting-en     | [每日英语听力](http://www.francochinois.com/v4/en/app/ting)  | 国产商业软件 |   🆓💰   |  √   |
-|    ting-es     | [每日西语听力](http://www.francochinois.com/v4/es/app/ting)  | 国产商业软件 |   🆓💰   |  √   |
-|    ting-fr     | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting)  | 国产商业软件 |   🆓💰   |  √   |
+|    ting-en     | [每日英语听力](http://www.francochinois.com/v4/en/app/ting)  | 国产商业软件 |  🆓💰   |  √   |
+|    ting-es     | [每日西语听力](http://www.francochinois.com/v4/es/app/ting)  | 国产商业软件 |  🆓💰   |  √   |
+|    ting-fr     | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting)  | 国产商业软件 |  🆓💰   |  √   |
 |   easy-to-tv   |   [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)    | 国产开源软件 |    🆓    |  √   |
-|   edrawmax-9   |      [亿图图示 9（固定版本）](http://www.edrawsoft.cn)       | 国产商业软件 |    💰    |  √   |
-| app-cleaner-cn | [App Cleaner（中文版）](https://nektony.com/mac-app-cleaner) |   商业软件   |    💰    |  √   |
+|   edrawmax-9   |      [亿图图示 9（固定版本）](http://www.edrawsoft.cn)       | 国产商业软件 |   💰    |  √   |
+| app-cleaner-cn | [App Cleaner（中文版）](https://nektony.com/mac-app-cleaner) |   商业软件   |   💰    |  √   |
 |    zlibrary    |            [Z-Library](https://zlibrary-asia.se)             |   商业软件   |    🆓    |  √   |
 
 ### CLI 软件
