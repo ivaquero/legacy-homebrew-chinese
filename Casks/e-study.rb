@@ -5,12 +5,12 @@ cask "e-study" do
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg"
   name "e-study"
   desc "Essential Tools for Brainiacs"
-  homepage "https://e-study.com/"
+  homepage "https://estudy.cnki.net/"
 
   livecheck do
-    url :url
+    url :homepage
     strategy :header_match
-    regex(/最新版本 v?(\d+(?:\.\d+)+)/i)
+    regex(/Mac?(\d+(?:\.\d+)+)客户端下载/i)
   end
 
   auto_updates true
