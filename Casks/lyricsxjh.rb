@@ -4,7 +4,7 @@ cask "lyricsxjh" do
 
   url "https://github.com/JH-Application-Forks/LyricsX/releases/download/v#{version}/LyricsX.zip"
   name "LyricsX_JH_Fork"
-  desc "Ultimate lyrics app for macOS."
+  desc "Ultimate Lyrics App"
   homepage "https://github.com/JH-Application-Forks/LyricsX"
 
   livecheck do
