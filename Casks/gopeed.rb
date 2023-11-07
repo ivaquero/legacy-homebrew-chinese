@@ -3,9 +3,9 @@ cask "gopeed" do
   sha256 :no_check
 
   url "https://github.com/GopeedLab/gopeed/releases/download/v#{version}/Gopeed-v#{version}-macos.dmg",
-      verified:   "github.com/GopeedLab/gopeed/"
+      verified: "github.com/GopeedLab/gopeed/"
   name "Gopeed"
-  desc "High speed downloader that supports all platforms."
+  desc "High speed downloader that supports all platforms"
   homepage "https://gopeed.com/"
 
   livecheck do
@@ -14,6 +14,7 @@ cask "gopeed" do
   end
 
   auto_updates true
+
   app "Gopeed.app"
 
   zap trash: [

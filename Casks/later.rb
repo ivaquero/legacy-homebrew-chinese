@@ -5,7 +5,7 @@ cask "later" do
   url "https://github.com/alyssaxuu/later/raw/master/Later.dmg",
       verified: "github.com/alyssaxuu/later/"
   name "Later"
-  desc "A simple Mac app to clear and restore your workspace with ease"
+  desc "Clear and restore your workspace with ease"
   homepage "https://getlater.app/"
 
   app "Later.app"

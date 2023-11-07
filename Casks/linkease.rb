@@ -14,6 +14,7 @@ cask "linkease" do
   end
 
   auto_updates true
+
   app "LinkEase.app"
 
   zap trash: [
