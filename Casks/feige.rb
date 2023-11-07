@@ -19,6 +19,6 @@ cask "feige" do
   zap trash: [
     "~/Library/Saved Application State/com.yourcompany.clock.savedState",
     "~/Library/Saved Application State/com.yourcompany.Feige.savedState",
-    "~/ipmsg.db"
+    "~/ipmsg.db",
   ]
 end
