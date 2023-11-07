@@ -43,6 +43,7 @@ jobs:
           brew install ripgrep sd
           echo 'export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***' >> /Users/runner/.bash_profile
           source /Users/runner/.bash_profile
+          echo $HOMEBREW_GITHUB_API_TOKEN
 
       - name: Bump mirorr casks
         continue-on-error: true
