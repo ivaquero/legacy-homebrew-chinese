@@ -4,7 +4,7 @@ cask "goldendict-ng" do
 
   url "https://github.com/xiaoyifang/goldendict-ng/releases/download/tag-alpha.2a7d4d5e/#{version.csv.first}-GoldenDict_macos-12_homebrew_#{version.csv.second}.dmg"
   name "GoldenDict"
-  desc "The Next Generation GoldenDict"
+  desc "Next Generation GoldenDict"
   homepage "http://goldendict.org/"
 
   livecheck do

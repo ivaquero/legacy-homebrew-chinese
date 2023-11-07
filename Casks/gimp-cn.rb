@@ -6,7 +6,7 @@ cask "gimp-cn" do
          intel: "03dc1d98eec58e49f0fa2c001e313822ee493efdf5b80f347ca8d0885eb38e15"
 
   url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/osx/gimp-#{version}-#{arch}.dmg",
-      verified:   "mirrors.ustc.edu.cn/gimp/"
+      verified: "mirrors.ustc.edu.cn/gimp/"
   name "GIMP development version"
   desc "Free and open-source image editor"
   homepage "https://www.gimp.org/"
