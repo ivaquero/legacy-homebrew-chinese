@@ -1,5 +1,5 @@
 cask "cudatext" do
-  arch arm: "aarch64", intel: "x86_64"
+  arch arm: "aarch64", intel: "amd64"
 
   version "1.195.0.5"
   sha256 :no_check
@@ -12,13 +12,13 @@ cask "cudatext" do
 
   livecheck do
     url "https://sourceforge.net/projects/cudatext/files/release/"
-    regex(/v?(\d+(?:\.\d+)+).+/i)
+    regex(/(\d+(\.\d+)+)/i)
     strategy :page_match do |page, regex|
       page.scan(regex).lazy.map do |match|
         version_page = Homebrew::Livecheck::Strategy.page_content(url.sub("/?", "/#{match[0]}/?"))
         next if version_page[:content].blank?
 
-        versions = version_page[:content].scan(/v?(\d+(?:\.\d+)+)\.dmg/i).map(&:first)
+        versions = version_page[:content].scan(/(\d+(\.\d+)+)\.dmg/i).map(&:first)
         next if versions.blank?
 
         versions
