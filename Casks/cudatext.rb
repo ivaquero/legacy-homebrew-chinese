@@ -15,7 +15,7 @@ cask "cudatext" do
     regex(/title="(\d+(\.\d+){3})"/i)
     strategy :page_match do |page, regex|
       page.scan(regex).lazy.map do |match|
-        new_url = "https://sourceforge.net/projects/cudatext/files/release/#{match[0]}/"
+        new_url = "#{url}#{match[0]}/"
         version_page = Homebrew::Livecheck::Strategy.page_content(new_url)
 
         next if version_page[:content].blank?
