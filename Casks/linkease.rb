@@ -9,8 +9,7 @@ cask "linkease" do
 
   livecheck do
     url "https://doc.linkease.com/zh/guide/linkease/install/device/support.html"
-    strategy :header_match
-    regex(/v?(\d+(?:\.\d+)+)/i)
+    regex(%r{macOS.*?v?(\d+(?:\.\d+)+)}i)
   end
 
   auto_updates true
