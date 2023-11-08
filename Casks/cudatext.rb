@@ -11,8 +11,19 @@ cask "cudatext" do
   homepage "https://cudatext.github.io/index.html"
 
   livecheck do
-    url "https://sourceforge.net/projects/cudatext/rss?path=/release/#{version.major_minor_patch}.0"
-    regex(/(\d+(\.\d+)+)\.dmg/i)
+    url "https://sourceforge.net/projects/cudatext/files/release/"
+    regex(/v?(\d+(?:\.\d+)+)/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).lazy.map do |match|
+        version_page = Homebrew::Livecheck::Strategy.page_content(url.sub("/?", "/#{match[0]}/?"))
+        next if version_page[:content].blank?
+
+        versions = version_page[:content].scan(/v?(\d+(?:\.\d+)+)\.dmg/i).map(&:first)
+        next if versions.blank?
+
+        versions
+      end.compact_blank.first
+    end
   end
 
   app "CudaText.app"
