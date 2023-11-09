@@ -1,7 +1,8 @@
 cask "lyx-cn" do
+  arch arm: "-arm64", intel: ""
   version "2.3.7"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-arm64-cocoa.dmg",
+  url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64#{arch}-cocoa.dmg",
       verified: "ftp.lip6.fr/pub/lyx/bin/"
   name "LyX"
   desc "GUI document processor based on the LaTeX typesetting system"
