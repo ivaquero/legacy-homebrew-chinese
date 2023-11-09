@@ -100,6 +100,7 @@ brew help
 |     Cask 名     |                               App 名                               |     类型     | 商业模式 |
 | :-------------: | :----------------------------------------------------------------: | :----------: | :------: |
 |      barss      |             [baRSS](https://relikd.de/projects/barss)              |   开源软件   |    🆓    |
+|     dvc-app     |                      [DVC](https://dvc.org/)                       | 开源软件分支 |    🆓    |
 |      later      |                   [Later](https://getlater.app)                    |   开源软件   |    🆓    |
 |     peazip      |             [PeaZip](https://github.com/peazip/PeaZip)             |   开源软件   |    🆓    |
 |     ryujinx     |                   [Ryujinx](https://ryujinx.org)                   |   开源软件   |    🆓    |
@@ -123,6 +124,7 @@ brew help
 |   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（国人开发） |    🆓    |
 |      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（国人开发） |    🆓    |
 | openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（国人开发） |    🆓    |
+|     pdf-guru      |                    [Pdf-Guru](hhttps://github.com/kevin2li/PDF-Guru)                    | 开源软件（国人开发） |    🆓    |
 |    pot-desktop    |                  [Pot-Desktop](https://github.com/pot-app/pot-desktop)                  | 开源软件（国人开发） |    🆓    |
 |  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（国人开发） |    🆓    |
 |     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（国人开发） |    🆓    |
