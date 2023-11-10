@@ -5,7 +5,7 @@ cask "cudatext" do
   sha256 :no_check
 
   url "https://downloads.sourceforge.net/cudatext/cudatext-macos-cocoa-#{arch}-#{version}.dmg",
-      verified: "sourceforge.net/projects/cudatext/"
+      verified: "downloads.sourceforge.net/cudatext/"
   name "CudaText"
   desc "Text editor"
   homepage "https://cudatext.github.io/index.html"
