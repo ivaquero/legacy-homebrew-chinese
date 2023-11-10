@@ -20,7 +20,7 @@ cask "cudatext" do
 
         next if version_page[:content].blank?
 
-        versions = version_page[:content].scan(/(\d+(\.\d+)+)\.dmg/i).map(&:first)
+        versions = version_page[:content].scan(/(\d+(\.\d+){3})\.dmg/i).map(&:first)
         next if versions.blank?
 
         versions.max
