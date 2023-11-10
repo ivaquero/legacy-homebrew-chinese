@@ -1,7 +1,7 @@
 cask "cudatext" do
   arch arm: "aarch64", intel: "amd64"
 
-  version "1.195.0.5"
+  version "1.201.0.2"
   sha256 :no_check
 
   url "https://downloads.sourceforge.net/cudatext/cudatext-macos-cocoa-#{arch}-#{version}.dmg",
