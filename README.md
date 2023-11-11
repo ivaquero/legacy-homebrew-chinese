@@ -126,6 +126,7 @@ brew help
 | openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（国人开发） |    🆓    |
 |     pdf-guru      |                    [Pdf-Guru](hhttps://github.com/kevin2li/PDF-Guru)                    | 开源软件（国人开发） |    🆓    |
 |    pot-desktop    |                  [Pot-Desktop](https://github.com/pot-app/pot-desktop)                  | 开源软件（国人开发） |    🆓    |
+|   squirrel-ime    |                    [鼠鬚管输入法](https://github.com/rime/squirrel)                     | 开源软件（国人开发） |    🆓    |
 |  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（国人开发） |    🆓    |
 |     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（国人开发） |    🆓    |
 |     yank-note     |                        [Yank-Note](https://yank-note.com/zh-CN)                         | 开源软件（国人开发） |    🆓    |
