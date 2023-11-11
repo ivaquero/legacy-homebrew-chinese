@@ -3,8 +3,7 @@
   sha256 :no_check
 
   url "https://github.com/ParetoSecurity/pareto-mac/releases/download/#{version}/ParetoSecurity.dmg",
-      verified:   "github.com/ParetoSecurity/",
-      user_agent: :fake
+      verified:   "github.com/ParetoSecurity/"
   name "Pareto Security"
   desc "Automatically audit your computer for basic security hygiene"
   homepage "https://paretosecurity.com/"

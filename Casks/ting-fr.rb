@@ -3,7 +3,7 @@ cask "ting-fr" do
   sha256 :no_check
 
   # static.frdic.com/ was verified as official when first introduced to the cask
-  url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?ver=#{version}",
+  url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日法语听力"
