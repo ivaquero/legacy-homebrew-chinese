@@ -121,6 +121,7 @@ brew help
 |   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（国人开发） |    🆓    |
 |      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（国人开发） |    🆓    |
 |    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（国人开发） |    🆓    |
+|     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（国人开发） |    🆓    |
 |   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（国人开发） |    🆓    |
 |      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（国人开发） |    🆓    |
 | openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（国人开发） |    🆓    |
