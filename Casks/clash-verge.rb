@@ -17,6 +17,11 @@ cask "clash-verge" do
 
   app "Clash Verge.app"
 
+  preflight do
+    system_command "xattr",
+                    args: ["-cr", "#{staged_path}/Clash Verge.app"]
+  end
+
   zap trash: [
     "~/.config/clash-verge",
     "~/Library/Caches/top.gydi.clashverge",
