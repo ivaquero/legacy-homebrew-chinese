@@ -120,6 +120,7 @@ brew help
 |   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（国人开发） |   🆓💰   |
 |   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（国人开发） |    🆓    |
 |      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（国人开发） |    🆓    |
+|  clash-nyanpasu   |              [Clash-Nyanpasu](https://github.com/keiko233/clash-nyanpasu)               | 开源软件（国人开发） |    🆓    |
 |    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（国人开发） |    🆓    |
 |     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（国人开发） |    🆓    |
 |   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（国人开发） |    🆓    |

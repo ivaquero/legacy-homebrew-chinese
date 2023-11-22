@@ -25,6 +25,7 @@ cask "peazip" do
   end
 
   zap trash: [
+    "~/.config/peazip"
     "~/Library/Preferences/com.company.peazip.plist",
     "~/Library/Saved Application State/com.company.peazip.savedState",
   ]
