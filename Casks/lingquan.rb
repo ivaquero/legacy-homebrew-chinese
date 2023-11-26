@@ -10,6 +10,11 @@ cask "lingquan" do
   desc "零泉可以轻松管理「图片、视频、音频、字体、3D 以及设计类源文件」等，各种文件，让创意工作更加简单，高效"
   homepage "https://lingquan.cool/"
 
+  livecheck do
+    url "https://help.lingquan.cool/blog/"
+    regex(/\d{2} v(\d+(\.\d+)+)/i)
+  end
+
   auto_updates true
 
   app "零泉.app"
