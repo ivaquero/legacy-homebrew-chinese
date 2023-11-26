@@ -150,7 +150,7 @@ brew help
 |    ting-en     | [每日英语听力](http://www.francochinois.com/v4/en/app/ting)  | 国产商业软件 |  🆓💰   |
 |    ting-es     | [每日西语听力](http://www.francochinois.com/v4/es/app/ting)  | 国产商业软件 |  🆓💰   |
 |    ting-fr     | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting)  | 国产商业软件 |  🆓💰   |
-|    xnapper     |            [Xnapper](https://https://xnapper.com)            |   商业软件   |   💰    |
+|    xnapper     |                [Xnapper](https://xnapper.com)                |   商业软件   |   💰    |
 |    zlibrary    |            [Z-Library](https://zlibrary-asia.se)             |   商业软件   |    🆓    |
 
 ### CLI 软件
