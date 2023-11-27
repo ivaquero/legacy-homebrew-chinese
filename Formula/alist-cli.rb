@@ -2,7 +2,7 @@ class AlistCli < Formula
   desc "A file list program that supports multiple storage, powered by Gin and Solidjs."
   homepage "https://github.com/alist-org/alist"
   license "GNU GPLv3"
-  version "3.28.0"
+  version "3.29.1"
 
   arch = Hardware::CPU.arm? ? "arm64" : "amd64"
   os_family = OS.mac? ? "darwin" : "linux"
@@ -11,12 +11,12 @@ class AlistCli < Formula
 
   if OS.mac?
     sha256 Hardware::CPU.arm? ?
-            "8e4ec21ea43292659f0ab8e8c1f9e1fdb64c993dd29eb6a63ccc112e44bb3931" :
-            "b8e59da89377165cee885375bb92a3d7e01a83d5d119229a56f47eda331eeb35"
+            "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965" :
+            "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
   else
     sha256 Hardware::CPU.arm? ?
-            "6e3611a31de104ffca9575c1f30225e38c351eb8f502ec280a388afdeead4517" :
-            "894e1b58da5a8e54fc27e277f3d4c25aa00df0e1e748e50619ce7d89b176bbec"
+            "606a6bcff1abd25bd5aaaf9663b62bfd3281e575dda9df1852b2e48f23511cae" :
+            "81f66e521fe48cb18daadab2d175116201d3ef6b5d5d7bbac1835493eb6e1c81"
   end
 
   livecheck do
