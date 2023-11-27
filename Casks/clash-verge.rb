@@ -15,6 +15,8 @@ cask "clash-verge" do
     strategy :github_latest
   end
 
+  conflicts_with cask: "clash-verge-rev"
+
   app "Clash Verge.app"
 
   preflight do
